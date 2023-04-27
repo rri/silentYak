@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-title">
+    {{ taxonomy.name | capitalize }}
+</div>
+<ul type="square" class="lstbox">
+    {% for term in terms %}
+    <li>
+        <a href="{{ term.permalink }}" title="View details">
+            <span class="tag">#{{ term.name }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
