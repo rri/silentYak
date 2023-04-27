@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for page in section.pages %}
+{% include "single.html" %}
+{% endfor %}
+{% endblock %}

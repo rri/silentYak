@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="{{ config.title }}">
+    <meta name="application-name" content="{{ config.title }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="{{ config.extra.description }}">
+    <meta property="og:title" content="{{ config.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ config.base_url }}">
+    <meta property="og:description" content="{{ config.extra.description }}">
+    <meta property="og:image" content="/silentYak-logo.webp">
+    {% if page.title %}
+    <title>{{ config.title }} :: {{ page.title }}</title>
+    {% else %}
+    <title>{{ config.title }}</title>
+    {% endif %}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <section id="main">
+        <div class="header">
+            <a href="/" title="Go home">
+                <img class="logo" src="/silentYak-logo.webp" title="silentYak" alt="" />
+            </a>
+            <a href="/" title="Go home">
+                <img class="banner" src="/silentYak-banner.webp" title="silentYak" alt="silentYak" />
+            </a>
+        </div>
+        <div id="search" class="search">
+            <input id="search-box" class="search-box" type="search" placeholder="Type text to search..." />
+            <div class="search-results">
+                <div class="search-results-items"></div>
+            </div>
+        </div>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="nav">
+            {% block nav %}{% endblock %}
+        </div>
+        <div class="footer">
+            &#169; {{ config.extra.copyright_info }}
+        </div>
+    </section>
+    <script type="text/javascript" src="/elasticlunr.min.js"></script>
+    <script type="text/javascript" src="/search_index.en.js"></script>
+    <script type="text/javascript" src="/search.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<div class="post-title">
+    {% if page.path != current_path %}
+    <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+    {% else %}
+    {{ page.title }}
+    {% endif %}
+</div>
+<div class="post-date">
+    {{ page.date | date(format="%A, %B %e, %Y") }}
+</div>
+{% if page.taxonomies.authors %}
+<div class="post-authors">
+    {% for author in page.taxonomies.authors %}
+    <a href="{{ get_taxonomy_url(kind = 'authors', name = author) }}" title="Go to {{ author }}'s bio"><span
+            class="author">@{{
+            author }}</span></a>
+    {% endfor %}
+</div>
+{% endif %}
+<div class="post-content">
+    {{ page.content | safe }}
+</div>
+{% if page.taxonomies.tags %}
+<div class="post-tags">
+    {% for tag in page.taxonomies.tags %}
+    <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all posts tagged as {{ tag }}"><span
+            class="tag">#{{ tag
+            }}</span></a>
+    {% endfor %}
+</div>
+{% endif %}
+<div class="post-rule"></div>
