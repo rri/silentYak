@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="{{ config.title }}">
+    <meta name="application-name" content="{{ config.title }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="{{ config.description }}">
+    <meta property="og:title" content="{{ config.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ config.base_url }}">
+    <meta property="og:description" content="{{ config.description }}">
+    {% if config.extra.icon %}
+    <meta property="og:image" content="{{ config.extra.icon }}">
+    {% endif %}
+    {% if page.title %}
+    <title>{{ config.title }} :: {{ page.title }}</title>
+    {% else %}
+    <title>{{ config.title }}</title>
+    {% endif %}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=99">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=99">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=99">
+    <link rel="shortcut icon" href="/favicon.ico?v=99">
+    <link rel="manifest" href="/site.webmanifest?v=99">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <section id="main">
+        <div class="header">
+            {% if config.extra.icon %}
+            <a href="/" title="Go home">
+                <img
+                    {% if config.extra.allow_invert_icon %}
+                    class="icon invert"
+                    {% else %}
+                    class="icon"
+                    {% endif %}
+                    src="/{{ config.extra.icon }}"
+                    title="{{ config.title }}"
+                    alt="" />
+            </a>
+            {% endif %}
+            {% if config.extra.logo %}
+            <a href="/" title="Go home">
+                <img
+                    {% if config.extra.allow_invert_logo %}
+                    class="logo invert"
+                    {% else %}
+                    class="logo"
+                    {% endif %}
+                    src="/{{ config.extra.logo }}"
+                    title="{{ config.title }}"
+                    alt="{{ config.title }}" />
+            </a>
+            {% endif %}
+        </div>
+        <div id="search" class="search">
+            <input id="search-box" class="search-box" type="search" placeholder="Type text to search..." />
+            <div class="search-results">
+                <div class="search-results-items"></div>
+            </div>
+        </div>
+        {% if config.extra.pinned is defined and config.extra.pinned | length > 0 %}
+        <div class="pinned">
+            {% for link in config.extra.pinned %}
+            <a href="/{{ link.href }}" title="{{ link.title }}"><span class="pinned-item-content">{{ link.title }}</span></a>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="footer">
+            &#169; {{ config.extra.copyright_info }}
+        </div>
+    </section>
+    <script type="text/javascript" src="/elasticlunr.min.js"></script>
+    <script type="text/javascript" src="/search_index.en.js"></script>
+    <script type="text/javascript" src="/search.js"></script>
+    <script type="text/javascript"></script>
+</body>
+
+</html>

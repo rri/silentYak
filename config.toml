@@ -1,0 +1,30 @@
+base_url = "https://silentyak.com"
+title = "silentYak"
+description = "a collection of ideas, and other uncommon things"
+default_language = "en"
+build_search_index = true
+compile_sass = true
+minify_html = true
+generate_feeds = true
+taxonomies = [
+    { name = "authors", paginate_by = 5, paginate_path = "pages", feed = true },
+    { name = "tags", paginate_by = 5, paginate_path = "pages", feed = true },
+]
+
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+    { filename = "syntax-theme-b.css", theme = "solarized-dark" },
+    { filename = "syntax-theme-w.css", theme = "solarized-light" },
+]
+smart_punctuation = true
+external_links_no_follow = true
+
+[extra]
+copyright_info = "Ramnath R Iyer"
+icon = "silentYak-icon.webp"
+logo = "silentYak-logo.webp"
+allow_invert_icon = false
+allow_invert_logo = true
