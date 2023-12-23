@@ -13,7 +13,9 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ config.base_url }}">
     <meta property="og:description" content="{{ config.extra.description }}">
-    <meta property="og:image" content="/silentYak-logo.webp">
+    {% if config.extra.icon %}
+    <meta property="og:image" content="{{ config.extra.icon }}">
+    {% endif %}
     {% if page.title %}
     <title>{{ config.title }} :: {{ page.title }}</title>
     {% else %}
@@ -31,12 +33,24 @@
 <body>
     <section id="main">
         <div class="header">
+            {% if config.extra.icon %}
             <a href="/" title="Go home">
-                <img class="logo" src="/silentYak-logo.webp" title="silentYak" alt="" />
+                <img
+                    class="icon"
+                    src="/{{ config.extra.icon }}"
+                    title="{{ config.title }}"
+                    alt="" />
             </a>
+            {% endif %}
+            {% if config.extra.icon %}
             <a href="/" title="Go home">
-                <img class="banner" src="/silentYak-banner.webp" title="silentYak" alt="silentYak" />
+                <img
+                    class="logo"
+                    src="/{{ config.extra.logo }}"
+                    title="{{ config.title }}"
+                    alt="{{ config.title }}" />
             </a>
+            {% endif %}
         </div>
         <div id="search" class="search">
             <input id="search-box" class="search-box" type="search" placeholder="Type text to search..." />

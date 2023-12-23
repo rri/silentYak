@@ -65,7 +65,7 @@
         --fore-color: #202020;
         --fore-color-filter: invert(6%) sepia(22%) saturate(0%) hue-rotate(346deg) brightness(105%) contrast(87%);
         --back-color: #fefefe;
-        --banner-color: #fcddbc;
+        --logo-color: #fcddbc;
         --line-color: #cecdb5;
         --link-color: #800000;
     }
@@ -76,7 +76,7 @@
         --fore-color: #cbe4de;
         --fore-color-filter: invert(92%) sepia(21%) saturate(155%) hue-rotate(113deg) brightness(96%) contrast(88%);
         --back-color: #002b36;
-        --banner-color: #2e4f4f;
+        --logo-color: #2e4f4f;
         --line-color: #204b56;
         --link-color: #2aa198;
     }
@@ -148,14 +148,14 @@ blockquote {
     justify-content: stretch;
     padding: calc(var(--spacing) * 2) 0;
 
-    .logo {
+    .icon {
         height: 40px;
         width: 40px;
         -webkit-user-select: none;
         user-select: none;
     }
 
-    .banner {
+    .logo {
         height: 40px;
         -webkit-user-select: none;
         user-select: none;
@@ -214,7 +214,7 @@ blockquote {
 
             .search-results-item {
                 .search-results-item-title {
-                    background-color: var(--banner-color);
+                    background-color: var(--logo-color);
                     padding: calc(var(--spacing));
                 }
 
@@ -289,8 +289,8 @@ blockquote {
         padding: var(--spacing) 0;
     }
 
-    .page-banner {
-        background-color: var(--banner-color);
+    .page-logo {
+        background-color: var(--logo-color);
         margin-top: var(--spacing);
         margin-bottom: var(--spacing);
         padding-left: var(--spacing);

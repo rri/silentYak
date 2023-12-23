@@ -18,3 +18,5 @@ external_links_no_follow = true
 [extra]
 copyright_info = "Ramnath R Iyer"
 description = "a collection of ideas, and other uncommon things"
+icon = "silentYak-icon.webp"
+logo = "silentYak-logo.webp"

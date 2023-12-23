@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/static/silentYak-banner.webp" width="300px" alt="" />
+  <img src="/static/silentYak-logo.webp" width="300px" alt="" />
 </p>
 
 ---
