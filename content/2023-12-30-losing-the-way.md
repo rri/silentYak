@@ -34,11 +34,12 @@ correct. And all that sounds great, except that in reality there's a dense smoky
 smoke makes you sputter, you keep tripping and falling along the way, and the oasis you saw in the
 distance was just a mirage.
 
-I recently finished reading Arnold Schwarzenegger's audiobook [Be Useful](https://beusefulbook.com/)
-[on Spotify](https://open.spotify.com/show/2m3zYlk9tl7MjNMBZkfNCG). One point that struck me was it
-is likely the case that we create the seeds of our visions *early* in life. And then, we take that
-seed and nurture it into something with greater definition. This, in turn, suggests that we already
-kinda sorta know what our vision is, and just have to work on refining it. And it gives me hope, for
+I recently finished reading Arnold Schwarzenegger's audiobook "[Be
+Useful](https://beusefulbook.com/)" [on
+Spotify](https://open.spotify.com/show/2m3zYlk9tl7MjNMBZkfNCG). One point that struck me was it is
+likely the case that we create the seeds of our visions *early* in life. And then, we take that seed
+and nurture it into something with greater definition. This, in turn, suggests that we already kinda
+sorta know what our vision is, and just have to work on refining it. And it gives me hope, for
 it suggests that we don't ever *really* lose our way, we just need to rediscover and refine it from
 time to time. This is a process, not a catastrophe. After all, if something is "lost" and later
 found, was it ever lost in the first place?
