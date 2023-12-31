@@ -333,10 +333,15 @@ blockquote {
     .post-tags {
         column-gap: var(--spacing);
         display: flex;
+        padding-bottom: var(--spacing);
 
         a {
             display: inline-block;
         }
+    }
+    
+    .post-reading-time {
+        text-align: right;
     }
 
     .post-content {
