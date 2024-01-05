@@ -71,29 +71,7 @@
     <script type="text/javascript" src="/elasticlunr.min.js"></script>
     <script type="text/javascript" src="/search_index.en.js"></script>
     <script type="text/javascript" src="/search.js"></script>
-    <script type="text/javascript">
-        <!-- Reading Time -->
-        function calculateReadingTime() {
-            const placeholders = document.getElementsByClassName("post-reading-time")
-            for (let i = 0; i < placeholders.length; i++) {
-                placeholders[i]
-                    .parentNode
-                    .childNodes
-                    .forEach((child) => {
-                        if (child.className === "post-content") {
-                            const wpm = 265
-                            const words = child.innerText.trim().split(/\s+/).length
-                            const time = Math.ceil(words / wpm)
-                            placeholders[i].innerText
-                                = "Estimated reading time: "
-                                + time
-                                + ((time === 1) ? " minute" : " minutes")
-                        }
-                    })
-            }
-        }
-        calculateReadingTime()
-    </script>
+    <script type="text/javascript"></script>
 </body>
 
 </html>

@@ -17,8 +17,10 @@
                 author }}</span></a>
         {% endfor %}
     </div>
-    <div class="post-reading-time"></div>
     {% endif %}
+    <div class="post-reading-time">
+        Reading time: ~{{ page.reading_time }} minute{% if page.reading_time > 1 %}s{% endif %} ({{ page.word_count }} word{% if page.word_count > 1 %}s{% endif %})
+    </div>
     <div class="post-content">
         {{ page.content | safe }}
     </div>
