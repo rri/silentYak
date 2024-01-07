@@ -227,7 +227,7 @@ blockquote {
     }
 }
 
-.nav-content {
+.nav {
     border: var(--line-width) solid transparent;
     border-top-color: var(--line-color);
     column-gap: calc(4 * var(--spacing));
@@ -356,11 +356,14 @@ blockquote {
         border-top: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
         margin: calc(var(--spacing) * 2) 0;
+    }
 
-        &:last-of-type {
+    .post:last-of-type {
+        .post-rule {
             display: none;
         }
     }
+
 
     .msgbox {
         display: flex;
