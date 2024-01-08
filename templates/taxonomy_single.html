@@ -10,7 +10,8 @@
     {{ term.name }}
     {% endif %}
 </div>
-{% for page in term.pages %}
+{% for page in paginator.pages %}
 {% include "single.html" %}
 {% endfor %}
+{% include "nav_list.html" %}
 {% endblock %}
