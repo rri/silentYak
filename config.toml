@@ -7,16 +7,8 @@ compile_sass = true
 minify_html = true
 generate_feed = true
 taxonomies = [
-    { name = "authors"
-    , paginate_by = 5
-    , paginate_path = "pages"
-    , feed = true
-    },
-    { name = "tags"
-    , paginate_by = 5
-    , paginate_path = "pages"
-    , feed = true
-    },
+    { name = "authors", paginate_by = 5, paginate_path = "pages", feed = true },
+    { name = "tags", paginate_by = 5, paginate_path = "pages", feed = true },
 ]
 
 
