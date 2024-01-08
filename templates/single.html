@@ -12,9 +12,7 @@
     {% if page.taxonomies.authors %}
     <div class="post-authors">
         {% for author in page.taxonomies.authors %}
-        <a href="{{ get_taxonomy_url(kind = 'authors', name = author) }}" title="Go to {{ author }}'s posts"><span
-                class="author">@{{
-                author }}</span></a>
+        <a href="{{ get_taxonomy_url(kind = 'authors', name = author) }}" title="Go to {{ author }}'s posts"><span class="author">@{{ author }}</span></a>
         {% endfor %}
     </div>
     {% endif %}
@@ -27,9 +25,7 @@
     {% if page.taxonomies.tags %}
     <div class="post-tags">
         {% for tag in page.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all posts tagged as {{ tag }}"><span
-                class="tag">#{{ tag
-                }}</span></a>
+        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all posts tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
         {% endfor %}
     </div>
     {% endif %}

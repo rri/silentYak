@@ -237,14 +237,15 @@ blockquote {
 
     .older, .newer {
         font-family: var(--font-mono);
+        user-select: none;
     }
 
-    .older {
+    .newer {
         text-align: right;
         flex: 1;
     }
 
-    .newer {
+    .older {
         text-align: left;
     }
 }
