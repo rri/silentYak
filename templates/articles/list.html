@@ -2,8 +2,8 @@
 
 {% block content %}
 {% for page in paginator.pages %}
-{% include "single.html" %}
+{% include "articles/content.html" %}
 {% endfor %}
-{% include "nav_list.html" %}
+{% include "navigator/list.html" %}
 {% endblock %}
 

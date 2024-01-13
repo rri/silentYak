@@ -8,13 +8,7 @@
     {% for term in terms %}
     <li>
         <a href="{{ term.permalink }}" title="View details">
-            {% if taxonomy.name == "authors" %}
-            <span class="author">@{{ term.name }}</span>
-            {% elif taxonomy.name == "tags" %}
             <span class="tag">#{{ term.name }}</span>
-            {% else %}
-            {{ term.name }}
-            {% endif %}
         </a>
     </li>
     {% endfor %}

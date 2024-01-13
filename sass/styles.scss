@@ -114,6 +114,9 @@ ol {
 li {
     margin-left: var(--spacing);
     padding-left: var(--spacing);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "...";
 }
 
 a,
@@ -251,10 +254,6 @@ blockquote {
 }
 
 .content {
-    border: var(--line-width) solid transparent;
-    border-top-color: var(--line-color);
-    padding: calc(var(--spacing) * 2) var(--spacing);
-
     h1, h2 {
         font-size: 1.2em;
         font-weight: normal;
@@ -307,45 +306,35 @@ blockquote {
     }
 
     .page-title {
+        border: var(--line-width) solid transparent;
+        border-top-color: var(--line-color);
+        font-size: x-large;
+        padding: calc(var(--spacing)*2) var(--spacing);
+    }
+
+    .article, .comment {
+        border: var(--line-width) solid transparent;
+        border-top-color: var(--line-color);
+        padding: calc(var(--spacing) * 2) var(--spacing);
+    }
+
+    .article-title, .comment-title {
         font-size: x-large;
         padding: var(--spacing) 0;
     }
 
-    .page-logo {
-        background-color: var(--logo-color);
-        margin-top: var(--spacing);
-        margin-bottom: var(--spacing);
-        padding-left: var(--spacing);
-        padding-right: var(--spacing);
-    }
-
-    .post-title {
-        font-size: x-large;
-        padding: var(--spacing) 0;
-    }
-
-    .post-date {
+    .article-date, .comment-date {
         display: flex;
         flex-direction: column;
         padding: var(--spacing) 0;
     }
 
-    .post-authors,
-    .post-tags {
-        column-gap: var(--spacing);
-        display: flex;
-        padding-bottom: var(--spacing);
-
-        a {
-            display: inline-block;
-        }
-    }
-
-    .post-reading-time {
+    .article-reading-time {
         text-align: right;
     }
 
-    .post-content {
+    .article-content,
+    .comment-content {
         font-size: 1.1em;
         -webkit-hyphens: auto;
         hyphens: auto;
@@ -353,18 +342,11 @@ blockquote {
         text-align: justify;
     }
 
-    .post-rule {
+    .rule {
         border-top: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
         margin: calc(var(--spacing) * 2) 0;
     }
-
-    .post:last-of-type {
-        .post-rule {
-            display: none;
-        }
-    }
-
 
     .msgbox {
         display: flex;

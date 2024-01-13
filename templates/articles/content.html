@@ -1,0 +1,32 @@
+<article class="article">
+    <div class="article-title">
+        {% if page.path != current_path %}
+        <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+    </div>
+    <div class="article-date">
+        {{ page.date | date(format="%A, %B %e, %Y") }}
+    </div>
+    {% if page.taxonomies.authors %}
+    <div class="article-authors">
+        {% for author in page.taxonomies.authors %}
+        <a href="{{ get_taxonomy_url(kind = 'authors', name = author) }}" title="Go to {{ author }}'s content"><span class="author">@{{ author }}</span></a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="article-reading-time">
+        {{ page.reading_time }}-minute read
+    </div>
+    <div class="article-content">
+        {{ page.content | safe }}
+    </div>
+    {% if page.taxonomies.tags %}
+    <div class="article-tags">
+        {% for tag in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all content tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
