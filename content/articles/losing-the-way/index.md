@@ -34,7 +34,7 @@ correct. And all that sounds great, except that in reality there's a dense smoky
 smoke makes you sputter, you keep tripping and falling along the way, and the oasis you saw in the
 distance was just a mirage.
 
-I recently finished reading Arnold Schwarzenegger's audiobook "[Be
+I recently finished reading Arnold Schwarz&shy;enegger's audiobook "[Be
 Useful](https://beusefulbook.com/)" [on
 Spotify](https://open.spotify.com/show/2m3zYlk9tl7MjNMBZkfNCG). One point that struck me was it is
 likely the case that we create the seeds of our visions *early* in life. And then, we take that seed
