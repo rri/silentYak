@@ -162,6 +162,7 @@ blockquote {
         height: 40px;
         -webkit-user-select: none;
         user-select: none;
+        filter: var(--fore-color-filter);
     }
 }
 
