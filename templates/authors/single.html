@@ -5,7 +5,7 @@
     <span class="author">@{{ term.name }}</span>
 </div>
 {% for page in paginator.pages %}
-{% include "articles/content.html" %}
+{% include "posts/content.html" %}
 {% endfor %}
 {% include "navigator/list.html" %}
 {% endblock %}

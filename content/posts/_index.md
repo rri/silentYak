@@ -1,7 +1,7 @@
 +++
 sort_by = "date"
-template = "articles/list.html"
-page_template = "articles/single.html"
+template = "posts/list.html"
+page_template = "posts/single.html"
 paginate_by = 5
 paginate_path = "pages"
 transparent = true
