@@ -14,7 +14,11 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-highlight_theme = "solarized-light"
+highlight_theme = "css"
+highlight_themes_css = [
+    { filename = "syntax-theme-b.css", theme = "solarized-dark" },
+    { filename = "syntax-theme-w.css", theme = "solarized-light" },
+]
 smart_punctuation = true
 external_links_no_follow = true
 
