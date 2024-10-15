@@ -26,3 +26,5 @@ external_links_no_follow = true
 copyright_info = "Ramnath R Iyer"
 icon = "silentYak-icon.webp"
 logo = "silentYak-logo.webp"
+allow_invert_icon = false
+allow_invert_logo = true

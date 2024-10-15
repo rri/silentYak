@@ -36,7 +36,11 @@
             {% if config.extra.icon %}
             <a href="/" title="Go home">
                 <img
+                    {% if config.extra.allow_invert_icon %}
+                    class="icon invert"
+                    {% else %}
                     class="icon"
+                    {% endif %}
                     src="/{{ config.extra.icon }}"
                     title="{{ config.title }}"
                     alt="" />
@@ -45,7 +49,11 @@
             {% if config.extra.logo %}
             <a href="/" title="Go home">
                 <img
+                    {% if config.extra.allow_invert_logo %}
+                    class="logo invert"
+                    {% else %}
                     class="logo"
+                    {% endif %}
                     src="/{{ config.extra.logo }}"
                     title="{{ config.title }}"
                     alt="{{ config.title }}" />
