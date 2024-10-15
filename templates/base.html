@@ -66,6 +66,13 @@
                 <div class="search-results-items"></div>
             </div>
         </div>
+        {% if config.extra.pinned is defined and config.extra.pinned | length > 0 %}
+        <div class="pinned">
+            {% for link in config.extra.pinned %}
+            <a href="/{{ link.href }}" title="{{ link.title }}"><span class="pinned-item-content">{{ link.title }}</span></a>
+            {% endfor %}
+        </div>
+        {% endif %}
         <div class="content">
             {% block content %}{% endblock %}
         </div>

@@ -172,6 +172,25 @@ blockquote {
     }
 }
 
+.pinned {
+    border: var(--line-width) solid transparent;
+    border-top-color: var(--line-color);
+    column-gap: calc(2 * var(--spacing));
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--spacing);
+
+    a {
+        display: list-item;
+        list-style-position: inside;
+        list-style-type: '📌';
+
+        .pinned-item-content {
+            padding-left: var(--spacing);
+        }
+    }
+}
+
 .search {
     border: var(--line-width) solid transparent;
     border-top-color: var(--line-color);
