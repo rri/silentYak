@@ -17,6 +17,16 @@
     </div>
     {% endif %}
     <div class="post-content">
+        {% if page.toc and page.extra.toc %}
+        <h1>On This Page...</h1>
+        <ul>
+            {% for h1 in page.toc %}
+            <li>
+                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
         {{ page.content | safe }}
     </div>
     {% if page.taxonomies.tags %}
