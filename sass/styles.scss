@@ -60,9 +60,6 @@
     --spacing: 0.5em;
 }
 
-@import url("syntax-theme-b.css") (prefers-color-scheme: dark);
-@import url("syntax-theme-w.css") (prefers-color-scheme: light);
-
 @media (prefers-color-scheme: light) {
     :root {
         --fore-color: #202020;
