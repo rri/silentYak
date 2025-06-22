@@ -9,9 +9,6 @@
     <div class="post-date">
         {{ page.date | date(format="%A, %B %e, %Y") }}
     </div>
-    <div class="post-content">
-        {{ page.content | safe }}
-    </div>
     {% if page.taxonomies.tags %}
     <div class="post-tags">
         {% for tag in page.taxonomies.tags %}
@@ -19,4 +16,7 @@
         {% endfor %}
     </div>
     {% endif %}
+    <div class="post-content">
+        {{ page.content | safe }}
+    </div>
 </article>

@@ -9,6 +9,13 @@
     <div class="post-date">
         {{ page.date | date(format="%A, %B %e, %Y") }}
     </div>
+    {% if page.taxonomies.tags %}
+    <div class="post-tags">
+        {% for tag in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all content tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
+        {% endfor %}
+    </div>
+    {% endif %}
     <div class="post-content">
         {% if page.toc and page.extra.toc %}
         <h1>On This Page...</h1>
@@ -22,11 +29,4 @@
         {% endif %}
         {{ page.content | safe }}
     </div>
-    {% if page.taxonomies.tags %}
-    <div class="post-tags">
-        {% for tag in page.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all content tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
-        {% endfor %}
-    </div>
-    {% endif %}
 </article>

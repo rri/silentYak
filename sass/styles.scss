@@ -58,12 +58,14 @@
 @media (prefers-color-scheme: light) {
     :root {
         --page-brightness: brightness(1.0);
+        --backdrop-filter: none;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --page-brightness: brightness(0.6);
+        --backdrop-filter: grayscale();
     }
 }
 
@@ -86,6 +88,7 @@ li {
 body {
     color: var(--fore-color);
     background-repeat: repeat;
+    backdrop-filter: var(--backdrop-filter);
     filter: var(--page-brightness);
     font-display: swap;
     font-size: 16px;
