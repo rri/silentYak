@@ -29,3 +29,7 @@ background = "background.png"
 background_header = "background-header.jpg"
 allow_invert_icon = false
 allow_invert_logo = false
+pinned = [
+    {title = "Reading List", href = "pages/reading-list"},
+    {title = "About Me", href = "pages/about-me"}
+]
