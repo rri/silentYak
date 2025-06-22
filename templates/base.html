@@ -26,24 +26,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=99">
     <link rel="shortcut icon" href="/favicon.ico?v=99">
     <link rel="manifest" href="/site.webmanifest?v=99">
+    <style>
+        {% if config.extra.background is defined %}
+        :root {
+            --background: url("/{{ config.extra.background }}");
+        }
+        {% endif %}
+        {% if config.extra.background_header is defined %}
+        :root {
+            --background-header: url("/{{ config.extra.background_header }}");
+        }
+        {% endif %}
+    </style>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/syntax-theme-b.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="/syntax-theme-w.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="/styles.css">
 </head>
 
-<body
-    {% if config.extra.background is defined %}
-    style="background-image: url('/{{ config.extra.background }}')"
-    {% endif %}
-    >
+<body>
     <section id="main">
         <div class="header-spacer"></div>
-        <div class="header"
-            {% if config.extra.background_header is defined %}
-            style="background-image: url('/{{ config.extra.background_header }}')"
-            {% endif %}
-            >
+        <div class="header">
             {% if config.extra.icon %}
             <a href="/" title="Go home">
                 <img
