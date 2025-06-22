@@ -17,7 +17,7 @@
     <meta property="og:image" content="{{ config.extra.icon }}">
     {% endif %}
     {% if page.title %}
-    <title>{{ config.title }} :: {{ page.title }}</title>
+    <title>{{ config.title }} : {{ page.title }}</title>
     {% else %}
     <title>{{ config.title }}</title>
     {% endif %}
@@ -32,9 +32,18 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 
-<body>
+<body
+    {% if config.extra.background is defined %}
+    style="background-image: url('/{{ config.extra.background }}')"
+    {% endif %}
+    >
     <section id="main">
-        <div class="header">
+        <div class="header-spacer"></div>
+        <div class="header"
+            {% if config.extra.background_header is defined %}
+            style="background-image: url('/{{ config.extra.background_header }}')"
+            {% endif %}
+            >
             {% if config.extra.icon %}
             <a href="/" title="Go home">
                 <img
