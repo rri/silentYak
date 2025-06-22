@@ -27,7 +27,7 @@ theoretical physics, literature and philosophy. But mostly, I like tinkering wit
 stubborn problems.
 
 ```bash
-$ mail -s "Ideas and feedback"
+$ mail -s "Ideas & feedback"
 ```
 
 If you have any private comments, feedback or suggestions, including ideas for topics to blog about
