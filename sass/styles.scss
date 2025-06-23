@@ -403,26 +403,6 @@ blockquote {
                 font-weight: bolder;
             }
         }
-
-        &.gallery {
-            display: flex;
-            img {
-                padding: 0;
-                column-gap: var(--spacing);
-
-                &.w-1-4 {
-                    max-width: calc(25% - (3 * var(--spacing) / 2));
-                }
-
-                &.w-1-3 {
-                    max-width: calc(33.33% - (4 * var(--spacing) / 3));
-                }
-
-                &.w-1-2 {
-                    max-width: calc(50% - var(--spacing));
-                }
-            }
-        }
     }
 
     .post, .comment {
