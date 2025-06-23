@@ -15,7 +15,7 @@ enjoy outdoor activity like hiking (like most Pacific Northwesterners), and I lo
 non-fiction and technical books. I am a huge fan of that most excellent endangered beverage known as
 "coffee" /ˈkɒf.i/.
 
-![Photo](photo.jpg "Ramnath on the left, Anu on the right")
+![Photo](photo.webp "Ramnath on the left, Anu on the right")
 
 By trade, I am a software professional, currently employed at Amazon
 [Kuiper](https://www.aboutamazon.com/what-we-do/devices-services/project-kuiper). Of course, any
