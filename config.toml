@@ -25,8 +25,8 @@ external_links_no_follow = true
 [extra]
 copyright_info = "Ramnath R Iyer"
 logo = "silentYak-logo.webp"
-background = "background.png"
-background_header = "background-header.jpg"
+background = "background.webp"
+background_header = "background-header.webp"
 allow_invert_icon = false
 allow_invert_logo = false
 pinned = [
