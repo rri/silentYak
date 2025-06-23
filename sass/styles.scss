@@ -89,7 +89,7 @@
         --accent-color: #fdfd96;
         --highlight-color: #2a2520;
         --muted-color: #a0a0a0;
-        --header-filter: hue-rotate(180deg) brightness(0.3) contrast(1.2) saturate(1.5);
+        --header-filter: sepia(40%) saturate(1.6) hue-rotate(30deg) brightness(0.55) contrast(1.25);
     }
 }
 
