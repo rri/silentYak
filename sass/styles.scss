@@ -415,6 +415,20 @@ blockquote {
         }
     }
 
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc(var(--spacing) / 2);
+        max-width: 100%;
+
+        .gallery-item {
+            border: var(--line-width) solid var(--fore-color);
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
     .post, .comment {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
