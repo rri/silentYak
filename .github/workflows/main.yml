@@ -29,5 +29,6 @@ jobs:
           BUILD_ONLY: true
       - name: Deploy package
         run: |
-          aws s3 sync public/ s3://silentyak-com-website-assets --delete --cache-control max-age=86400
+          aws s3 sync public/ s3://silentyak-com-website-assets --delete --exclude "*" --include "*.ico" --include "*.png" --include "*.webp" --include "*.jpg" --include "*.svg" --include "*.woff2" --include "*.webmanifest" --include "browserconfig.xml" --include "normalize.css" --include "elasticlunr.min.js" --include "search.js" --include "syntax-theme-b.css" --include "syntax-theme-w.css" --cache-control max-age=31536000
+          aws s3 sync public/ s3://silentyak-com-website-assets --delete --include "*" --exclude "*.ico" --exclude "*.png" --exclude "*.webp" --exclude "*.jpg" --exclude "*.svg" --exclude "*.woff2" --exclude "*.webmanifest" --exclude "browserconfig.xml" --exclude "normalize.css" --exclude "elasticlunr.min.js" --exclude "search.js" --exclude "syntax-theme-b.css" --exclude "syntax-theme-w.css" --cache-control max-age=86400
           aws cloudfront create-invalidation --distribution-id E2JDATP1TDIY9S --paths '/*'
