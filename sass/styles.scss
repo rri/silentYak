@@ -148,7 +148,7 @@ li {
     padding-left: var(--spacing);
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: "...";
+    text-overflow: ellipsis;
 }
 
 a,
