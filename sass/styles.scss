@@ -498,6 +498,8 @@ blockquote {
     }
 
     .msgbox {
+        border: var(--line-width) solid transparent;
+        border-top-color: var(--line-color);
         display: flex;
         flex-direction: column;
 
