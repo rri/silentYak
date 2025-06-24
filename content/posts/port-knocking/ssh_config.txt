@@ -1,0 +1,7 @@
+# Merge this snippet into your `$HOME/.ssh/config` file.
+#
+# Replace HOSTNAME with your server's DNS hostname or IP address (as you'd normally use).
+#
+# The `knock` executable should be in your `PATH`.
+
+Match host HOSTNAME exec "echo 'Knocking on ports...' && knock HOSTNAME 1234 4321 1234 4321"
