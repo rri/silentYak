@@ -445,6 +445,10 @@ blockquote {
         animation: fadeIn var(--animation-duration) ease-out;
     }
 
+    .index {
+        border-spacing: var(--spacing);
+    }
+
     .page-title {
         border-top: var(--line-width) solid var(--line-color);
         font-family: var(--font-heading);
