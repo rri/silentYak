@@ -127,6 +127,12 @@ li {
     padding: 0;
 }
 
+pre {
+    font-size: 0.8em;
+    padding: calc(var(--spacing));
+    overflow-x: scroll;
+}
+
 body {
     color: var(--fore-color);
     background-image: var(--background);
