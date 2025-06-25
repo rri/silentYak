@@ -230,12 +230,11 @@ p {
     font-family: var(--font-content);
     margin: auto;
     max-width: 800px;
-    row-gap: var(--spacing-md);
     padding: 0 var(--spacing-xl);
 
     .header-spacer {
-        background: linear-gradient(0deg, black, gray, black);
-        height: 20px;
+        background: linear-gradient(0deg, black 0%, gray 50%, black 100%);
+        height: var(--spacing-lg);
     }
 
     .header {
@@ -280,7 +279,6 @@ p {
         border-top-color: var(--line-color);
         display: none; // JavaScript (JS) is required for search to work, so a JS call sets this to inline-block
         padding: var(--spacing-md);
-        padding-bottom: 0;
         position: relative;
 
         input[type="search"] {
@@ -377,7 +375,6 @@ p {
         font-family: var(--font-heading);
         justify-content: flex-end;
         padding: var(--spacing-md);
-        padding-bottom: 0;
 
         a {
             display: inline-flex;
@@ -537,7 +534,7 @@ p {
             column-gap: var(--spacing-xl);
             display: flex;
             justify-content: stretch;
-            padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md) var(--spacing-md);
+            padding: var(--spacing-lg) var(--spacing-md);
 
             a {
                 text-decoration: none;
@@ -562,7 +559,7 @@ p {
     .footer {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
-        padding: var(--spacing-md) 0;
+        padding: var(--spacing-md);
         text-align: center;
     }
 }
