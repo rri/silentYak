@@ -17,26 +17,16 @@
     {% endif %}
     <div class="post-content">
         {% set section = get_section(path="posts/_index.md") %}
-        <table class="index">
-            <thead>
-                <tr>
-                    <th class="index-heading index-date">Date</th>
-                    <th class="index-heading index-title">Title</th>
-                </tr>
-            </thead>
-            <tbody>
-            {% for page in section.pages %}
-            <tr>
-                <td class="index-date">
-                    {{ page.date | date(format="%Y-%m-%d") }}
-                </td>
-                <td class="index-title">
-                    <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
-                </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+        {% for year, pages in section.pages | group_by (attribute = "year") %}
+        <div class="index-year">
+            {{ year }}
+        </div>
+        {% for page in section.pages %}
+        <div class="index-title">
+            <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+        </div>
+        {% endfor %}
+        {% endfor %}
     </div>
 </article>
 {% endblock %}

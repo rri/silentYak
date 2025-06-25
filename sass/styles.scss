@@ -150,6 +150,11 @@ ol {
     padding: var(--spacing) 0;
 }
 
+li {
+    margin-left: var(--spacing);
+    padding-left: var(--spacing);
+}
+
 a,
 a:link,
 a:visited,
@@ -394,8 +399,20 @@ p {
             animation: fadeIn var(--animation-duration) ease-out;
         }
 
-        .index {
-            border-spacing: var(--spacing);
+        .index-year {
+            font-family: var(--font-heading);
+            font-size: x-large;
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--link-color);
+            }
+        }
+
+        .index-title {
+            &::before {
+                content: "⤷ ";
+            }
         }
 
         .page-title {
@@ -403,6 +420,12 @@ p {
             font-family: var(--font-heading);
             font-size: x-large;
             padding: calc(var(--spacing)) var(--spacing);
+            color: var(--fore-color);
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--link-color);
+            }
         }
 
         .post-title, .comment-title {
