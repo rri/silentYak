@@ -55,7 +55,7 @@
     --base-font-size: 16px;
     --line-width: 1px;
     --outline-width: 2px;
-    --spacing: 0.5em;
+    --spacing-base: 0.5em;
     --border-radius: 2px;
     --dropdown-max-height: 400px;
     --animation-duration: 0.6s;
@@ -65,6 +65,11 @@
     --drop-shadow-inner: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     --drop-shadow-outer: 0 0 0 3px rgba(212, 175, 55, 0.2);
     --drop-shadow-modal: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --spacing-xs: calc(var(--spacing-base) / 4);  /* 0.125em */
+    --spacing-sm: calc(var(--spacing-base) / 2);  /* 0.25em */
+    --spacing-md: var(--spacing-base);            /* 0.5em */
+    --spacing-lg: calc(var(--spacing-base) * 2);  /* 1em */
+    --spacing-xl: calc(var(--spacing-base) * 4);  /* 2em */
 }
 
 @media (prefers-color-scheme: light) {
@@ -130,7 +135,7 @@ li {
 
 pre {
     font-size: 0.8em;
-    padding: calc(var(--spacing));
+    padding: var(--spacing-md);
     overflow-x: scroll;
 }
 
@@ -148,12 +153,12 @@ ul,
 ol {
     list-style-type: "‣ ";
     list-style-position: outside;
-    padding: var(--spacing) 0;
+    padding: var(--spacing-md) 0;
 }
 
 li {
-    margin-left: var(--spacing);
-    padding-left: var(--spacing);
+    margin-left: var(--spacing-md);
+    padding-left: var(--spacing-md);
 }
 
 a,
@@ -179,8 +184,8 @@ a:focus {
 }
 
 blockquote {
-    margin: calc(var(--spacing) * 2) 0;
-    padding: var(--spacing) calc(var(--spacing) * 2);
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
     border-left: calc(4 * var(--line-width)) solid var(--accent-color);
     background-color: var(--highlight-color);
 }
@@ -189,8 +194,8 @@ h1, h2 {
     font-family: var(--font-heading);
     font-size: 1.3em;
     font-weight: normal;
-    margin: calc(var(--spacing) * 2) 0;
-    padding-bottom: calc(var(--spacing) / 2);
+    margin: var(--spacing-lg) 0;
+    padding-bottom: var(--spacing-sm);
 }
 
 h2 {
@@ -198,7 +203,7 @@ h2 {
 }
 
 p {
-    margin: calc(var(--spacing) * 2) 0;
+    margin: var(--spacing-lg) 0;
 
     img {
         display: block;
@@ -208,7 +213,7 @@ p {
 
     img + em {
         display: block;
-        padding: var(--spacing) 0;
+        padding: var(--spacing-md) 0;
         text-align: center;
 
         &::before {
@@ -225,8 +230,8 @@ p {
     font-family: var(--font-content);
     margin: auto;
     max-width: 800px;
-    row-gap: calc(var(--spacing));
-    padding: 0 calc(var(--spacing) * 4);
+    row-gap: var(--spacing-md);
+    padding: 0 var(--spacing-xl);
 
     .header-spacer {
         background: linear-gradient(0deg, black, gray, black);
@@ -239,7 +244,7 @@ p {
         background-size: 100% 100%;
         display: flex;
         justify-content: stretch;
-        padding: calc(var(--spacing));
+        padding: var(--spacing-md);
         position: relative;
 
         &::before {
@@ -274,7 +279,7 @@ p {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
         display: none; // JavaScript (JS) is required for search to work, so a JS call sets this to inline-block
-        padding: var(--spacing);
+        padding: var(--spacing-md);
         padding-bottom: 0;
         position: relative;
 
@@ -296,7 +301,7 @@ p {
             background-color: var(--back-color);
             border: var(--line-width) solid var(--line-color);
             outline: none;
-            padding: var(--spacing);
+            padding: var(--spacing-md);
             width: 100%;
             border-radius: calc(var(--border-radius) * 2);
             transition: var(--transition);
@@ -318,14 +323,14 @@ p {
             border: var(--line-width) solid var(--line-color);
             border-radius: calc(var(--border-radius) * 2);
             display: none;
-            padding: var(--spacing);
+            padding: var(--spacing-md);
             overflow: auto;
             max-height: var(--dropdown-max-height);
             position: absolute;
-            right: var(--spacing);
-            width: calc(100% - 2 * var(--spacing));
+            right: var(--spacing-md);
+            width: calc(100% - var(--spacing-lg));
             z-index: 10;
-            margin-top: calc(var(--spacing) / 2);
+            margin-top: var(--spacing-sm);
 
             .search-results-items {
                 display: flex;
@@ -338,7 +343,7 @@ p {
                 }
 
                 .search-results-item {
-                    margin-bottom: calc(var(--spacing) / 2);
+                    margin-bottom: var(--spacing-sm);
                     transition: var(--transition);
                     border-radius: 0 0 calc(var(--border-radius) * 2) calc(var(--border-radius) * 2);
 
@@ -348,14 +353,14 @@ p {
 
                     .search-results-item-title {
                         background-color: var(--logo-color);
-                        padding: calc(var(--spacing));
+                        padding: var(--spacing-md);
                         border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0 0;
                         font-weight: bold;
                     }
 
                     .search-results-item-snippet {
-                        padding: calc(var(--spacing));
-                        padding-bottom: calc(var(--spacing) * 2);
+                        padding: var(--spacing-md);
+                        padding-bottom: var(--spacing-lg);
                         color: var(--muted-color);
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -371,13 +376,13 @@ p {
         display: flex;
         font-family: var(--font-heading);
         justify-content: flex-end;
-        padding: var(--spacing);
+        padding: var(--spacing-md);
         padding-bottom: 0;
 
         a {
             display: inline-flex;
             align-items: center;
-            padding: calc(var(--spacing) / 2) var(--spacing);
+            padding: var(--spacing-sm) var(--spacing-md);
             text-decoration: none;
             transition: var(--transition);
             border-radius: var(--border-radius);
@@ -398,8 +403,8 @@ p {
             border-top-color: var(--line-color);
             display: flex;
             flex-direction: column;
-            row-gap: calc(var(--spacing));
-            padding: calc(var(--spacing) * 2) var(--spacing);
+            row-gap: var(--spacing-md);
+            padding: var(--spacing-lg) var(--spacing-md);
             animation: fadeIn var(--animation-duration) ease-out;
         }
 
@@ -424,7 +429,7 @@ p {
             border-top: var(--line-width) solid var(--line-color);
             font-family: var(--font-heading);
             font-size: x-large;
-            padding: calc(var(--spacing)) var(--spacing);
+            padding: var(--spacing-md);
             color: var(--fore-color);
             transition: var(--transition);
 
@@ -465,7 +470,7 @@ p {
 
         .post-tags {
             display: flex;
-            column-gap: var(--spacing);
+            column-gap: var(--spacing-md);
 
             a {
                 text-decoration: none;
@@ -479,7 +484,7 @@ p {
         .rule {
             border-top: var(--line-width) solid transparent;
             border-top-color: var(--line-color);
-            margin: calc(var(--spacing) * 2) 0;
+            margin: var(--spacing-lg) 0;
         }
 
         .msgbox {
@@ -490,32 +495,32 @@ p {
 
             .msg {
                 font-style: italic;
-                padding-top: calc(var(--spacing) * 8);
+                padding-top: var(--spacing-xl);
                 text-align: center;
             }
 
             .map {
-                padding-top: calc(var(--spacing) * 8);
+                padding-top: var(--spacing-xl);
                 width: 100%;
             }
         }
 
         .lstbox {
-            margin-top: calc(var(--spacing) * 2);
+            margin-top: var(--spacing-lg);
         }
 
         .footnote-definition {
             font-size: smaller;
             p {
                 display: inline;
-                margin: 0 var(--spacing);
+                margin: 0 var(--spacing-md);
             }
         }
 
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: calc(var(--spacing) / 2);
+            gap: var(--spacing-sm);
             max-width: 100%;
 
             .gallery-item {
@@ -529,10 +534,10 @@ p {
         .nav {
             border: var(--line-width) solid transparent;
             border-top-color: var(--line-color);
-            column-gap: calc(4 * var(--spacing));
+            column-gap: var(--spacing-xl);
             display: flex;
             justify-content: stretch;
-            padding: calc(var(--spacing) * 2) var(--spacing) var(--spacing) var(--spacing);
+            padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md) var(--spacing-md);
 
             a {
                 text-decoration: none;
@@ -557,7 +562,7 @@ p {
     .footer {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
-        padding: calc(var(--spacing) * 2) 0;
+        padding: var(--spacing-md) 0;
         text-align: center;
     }
 }
