@@ -30,9 +30,9 @@ background_header = "background-header.webp"
 allow_invert_icon = false
 allow_invert_logo = false
 pinned_icons = [
-    { title = "Open the archive...", href = "pages/archive", icon = "📁" }
+    { title = "View a list of all posts...", href = "pages/archive", icon = "📜" }
 ]
 pinned_links = [
-    { title = "Reading List", href = "pages/reading-list", icon = "📚" },
-    { title = "About Me", href = "pages/about-me", icon = "🎲" }
+    { title = "Reading List", href = "pages/reading-list", icon = "🌎" },
+    { title = "About Me", href = "pages/about-me", icon = "⛳" }
 ]

@@ -7,5 +7,5 @@ authors = ["Ramnath R Iyer"]
 tags = ["meta"]
 +++
 
-[Open the archive...](/pages/archive)
+[View a list of all posts...](/pages/archive)
 
