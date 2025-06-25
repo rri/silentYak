@@ -192,13 +192,17 @@ blockquote {
 
 h1, h2 {
     font-family: var(--font-heading);
-    font-size: 1.3em;
     font-weight: normal;
-    margin: var(--spacing-lg) 0;
-    padding-bottom: var(--spacing-sm);
+    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 1.5em;
 }
 
 h2 {
+    font-size: 1.3em;
     font-style: italic;
 }
 
@@ -400,15 +404,14 @@ p {
             border-top-color: var(--line-color);
             display: flex;
             flex-direction: column;
-            row-gap: var(--spacing-md);
+            gap: var(--spacing-md);
             padding: var(--spacing-lg) var(--spacing-md);
             animation: fadeIn var(--animation-duration) ease-out;
         }
 
-        h2.index-year {
-            font-family: var(--font-heading);
-            font-size: x-large;
-            margin: 0;
+        .index-year {
+            border-bottom: var(--line-width) solid var(--line-color);
+            padding-bottom: var(--spacing-sm);
             transition: var(--transition);
 
             &:hover {
@@ -440,6 +443,7 @@ p {
             font-size: x-large;
             color: var(--fore-color);
             transition: var(--transition);
+            margin-bottom: var(--spacing-sm);
 
             &:hover {
                 color: var(--link-color);
@@ -455,6 +459,7 @@ p {
             flex-direction: column;
             color: var(--muted-color);
             font-size: 0.9em;
+            margin-bottom: var(--spacing-sm);
         }
 
         .post-content,
