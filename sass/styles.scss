@@ -119,6 +119,7 @@
 
 html,
 body,
+p,
 ul,
 ol,
 li {
@@ -188,6 +189,7 @@ h1, h2 {
     font-family: var(--font-heading);
     font-size: 1.3em;
     font-weight: normal;
+    margin: calc(var(--spacing) * 2) 0;
     padding-bottom: calc(var(--spacing) / 2);
 }
 
@@ -196,6 +198,8 @@ h2 {
 }
 
 p {
+    margin: calc(var(--spacing) * 2) 0;
+
     img {
         display: block;
         margin: auto;
@@ -399,9 +403,10 @@ p {
             animation: fadeIn var(--animation-duration) ease-out;
         }
 
-        .index-year {
+        h2.index-year {
             font-family: var(--font-heading);
             font-size: x-large;
+            margin: 0;
             transition: var(--transition);
 
             &:hover {

@@ -18,9 +18,9 @@
     <div class="post-content">
         {% set section = get_section(path="posts/_index.md") %}
         {% for year, pages in section.pages | group_by (attribute = "year") %}
-        <div class="index-year">
+        <h2 class="index-year">
             {{ year }}
-        </div>
+        </h2>
         {% for page in section.pages %}
         <div class="index-title">
             <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
