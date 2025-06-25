@@ -375,15 +375,15 @@ p {
         padding-bottom: 0;
 
         a {
-            display: list-item;
-            list-style: none;
-            padding: 0 calc(var(--spacing));
+            display: inline-flex;
+            align-items: center;
+            padding: calc(var(--spacing) / 2) var(--spacing);
             text-decoration: none;
             transition: var(--transition);
+            border-radius: var(--border-radius);
 
             &:hover {
                 background-color: var(--logo-color);
-                transform: translateY(calc(-1 * var(--outline-width)));
             }
         }
 
