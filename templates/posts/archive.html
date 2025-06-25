@@ -21,7 +21,7 @@
         <h2 class="index-year">
             {{ year }}
         </h2>
-        {% for page in section.pages %}
+        {% for page in pages %}
         <div class="index-title">
             <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
         </div>
