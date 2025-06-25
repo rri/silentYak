@@ -11,13 +11,17 @@ trailhead along the I-90 corridor. This is, of course, the **Teneriffe Falls Tra
 confused with the **Mount Teneriffe Trail**, which begins at the same trailhead but continues for 13
 miles all the way up to the summit.
 
+{{ gallery (folder = "waterfall") }}
+
 The waterfall at the top was a relatively calm one. In fact, it was only on the way back that we
 discovered it had even been in plain view about half a mile before getting the top, and both Anu and
 I had completely missed it on the way up. Perhaps we had been too engrossed in our conversation then.
+
+{{ gallery (folder = "fruits-and-flowers") }}
 
 We picked and ate some salmonberries (*rubus spectabilis*) on the way down. The yellow ones taste a
 tad like tomato. We did **not** eat any of the red-berried elder (*samucus racemosa*) --- they are
 poisonous if eaten raw! We found a good deal of purple foxglove (*digitalis purpurea*) that added to
 the natural beauty of the woods.
 
-{{ gallery() }}
+{{ gallery (folder = "woods") }}
