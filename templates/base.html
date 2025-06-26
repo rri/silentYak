@@ -21,11 +21,11 @@
     {% else %}
     <title>{{ config.title }}</title>
     {% endif %}
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=99">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=99">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=99">
-    <link rel="shortcut icon" href="/favicon.ico?v=99">
-    <link rel="manifest" href="/site.webmanifest?v=99">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='/apple-touch-icon.png', cachebust=true) }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='/favicon-32x32.png', cachebust=true) }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='/favicon-16x16.png', cachebust=true) }}">
+    <link rel="shortcut icon" href="{{ get_url(path='/favicon.ico', cachebust=true) }}">
+    <link rel="manifest" href="{{ get_url(path='/site.webmanifest', cachebust=true) }}">
     <style>
         {% if config.extra.background is defined %}
         :root {
@@ -136,7 +136,7 @@
     </section>
     <script type="text/javascript" src="/elasticlunr.min.js"></script>
     <script type="text/javascript" src="/search_index.en.js"></script>
-    <script type="text/javascript" src="/search.js"></script>
+    <script type="text/javascript" src="{{ get_url(path='/search.js', cachebust=true) }}"></script>
     <script type="text/javascript"></script>
 </body>
 
