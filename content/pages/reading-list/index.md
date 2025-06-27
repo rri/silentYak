@@ -57,7 +57,9 @@ they *want*, consider the stark truth of their current reality, and use this und
 advantage, to move inexorably towards accomplishing their vision. Creators seeks to create because
 of their belief that their creations *must* come into existence, and not because of any external
 need or approval. **Takeaway:** *The Path of Least Resistance* sets out a wonderful life-philosophy
-and provides an excellent guide for aspiring leaders. [↑ Back to Contents](#contents)
+and provides an excellent guide for aspiring leaders.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Dare to Lead](https://www.amazon.com/dp/0399592520)
 
@@ -82,8 +84,9 @@ to demonstrate vulnerability.
 > the right thing, I just have to keep listening and keep questioning.”
 
 **Takeaway:** *Dare to Lead* is a treasure trove of sage advice, but one idea that really struck a
-chord with me was that that *curiosity* could be seen as the antidote to the ego. [↑ Back to
-Contents](#contents)
+chord with me was that that *curiosity* could be seen as the antidote to the ego.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Toyota Kata](https://www.amazon.com/Toyota-Kata-Managing-Improvement-Adaptiveness/dp/0071635238)
 
@@ -96,7 +99,9 @@ of research, the book is packed with nuanced explanations and realistic examples
 create a truly adaptable organization that can thrive in the face of a changing environment, one
 must *practice* and *teach* the uncommon behaviors of systems thinking and continuous
 experimentation that are essential for navigating the ambiguous and dangerous territory that stand
-between us and the desired outcome. [↑ Back to Contents](#contents)
+between us and the desired outcome.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Thinking, Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
 
@@ -108,7 +113,9 @@ in the future. There are essentially two distinct systems of thinking, one — S
 fast, intuitive, biased and sometimes wrong (but doesn’t know it), and another — System 2 — that is
 slower and does the math, but is often too lazy to question the conclusions drawn by System 1.
 **Takeaway:** Recognize the fallacies of thinking that you might fall prey to, and guard against
-them diligently. An understanding of statistics may not hurt either. [↑ Back to Contents](#contents)
+them diligently. An understanding of statistics may not hurt either.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [How Big Things Get Done](https://www.amazon.com/How-Big-Things-Get-Done/dp/0593239512)
 
@@ -122,7 +129,9 @@ relentlessly tinker, iterate repeatedly, actively experiment, and keep asking *w
 planning phase...and don’t skip this phase; value the experience brought in by experts (who’ve done
 it before) and technology (that has worked reliably in the past); forecast unknown unknowns by
 taking the ‘outside’ view and considering reference classes. And of course, hire the right person
-for the job and get your team right from the start. [↑ Back to Contents](#contents)
+for the job and get your team right from the start.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Be Useful: Seven Tools for Life](https://beusefulbook.com/)
 
@@ -137,7 +146,9 @@ book has a very simple and practical message that comes from the heart and is so
 grounded that you can easily believe in it. Most critically, Arnold Schwarzenegger implies in no
 uncertain terms that no matter who you are, *you* have the capacity to do what it takes. This makes
 it very different from other self-help books where the ideas posited are too abstract, or the author
-speaks of circumstances you simply cannot relate to. [↑ Back to Contents](#contents)
+speaks of circumstances you simply cannot relate to.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Little Book of Talent](https://www.amazon.com/dp/034553025X)
 
@@ -149,7 +160,9 @@ in your day-to-day life. **Takeaway:** As with any other book in this genre, the
 it depends on how much of the advice contained within you intentionally apply. I recommend
 re-reading this book multiple times with intervals in between. Which tips do you find *surprising*?
 Which of the unsurprising ones do you *not* follow, based on a self-assessment — and why do you
-think that is? [↑ Back to Contents](#contents)
+think that is?  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
 
@@ -159,7 +172,9 @@ This is an essay that takes us back to the early days of Linux development, but 
 pertinent in today’s world of software development. It discusses two distinct styles of software
 development, top-down and bottom-up. **Takeaway:** For software to be truly successful in this
 world, you need to *loosen your control over it* and encourage it to grow organically to meet the
-needs of its users. [↑ Back to Contents](#contents)
+needs of its users.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Goal](https://www.amazon.com/dp/B002LHRM2O)
 
@@ -170,7 +185,9 @@ an organization must be defined as a process of ongoing improvement. Presented a
 the protagonist is trying to save his factory from getting shut down, it embodies the principle of
 ‘working backwards’ by ‘breaking constraints’. **Takeaway:** Once you internalize these ideas, you
 will apply them to every aspect of your life and will be *amazed* that you managed without them for
-so long. [↑ Back to Contents](#contents)
+so long.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Zero to One](https://www.amazon.com/dp/B00KHX0II4)
 
@@ -184,7 +201,9 @@ popular outcry against monopolies, but it becomes clear when you give the issue 
 consideration: the goal of a business is to become as successful as it possibly could be.
 **Takeaway:** It is helpful to come to terms with the idea that in a capitalistic society, the goal
 of a business is not altruistic, it is to create value for its customers and maximize profits for
-its owners. [↑ Back to Contents](#contents)
+its owners.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Behave](https://www.amazon.com/dp/1594205078)
 
@@ -197,8 +216,9 @@ masterful storytelling, and doesn’t hesitate to discuss thorny societal issues
 and our legal justice system. **Takeaway:** *Everything* is related. Human behavior is best seen as
 a vast, complex, entangled system where cause-and-effect is seldom clearcut, but rather, everything
 is *subtly* influenced by a multitude of factors. P.S. I recommend [the audiobook version on
-Audible](https://www.audible.com/pd/Behave-Audiobook/B06XW3MVNF), narrated by Michael Goldstrom. [↑
-Back to Contents](#contents)
+Audible](https://www.audible.com/pd/Behave-Audiobook/B06XW3MVNF), narrated by Michael Goldstrom.  
+[↑
+Back to Top](#contents)
 
 ### [Thinking in Bets](https://www.amazon.com/dp/B074DG9LQF)
 
@@ -211,8 +231,9 @@ to bet on a path in the face of incomplete or erroneous information. Life isn’
 skill and luck; rather, it is a combination of skill and probabilities – and you can make
 intelligent bets knowing the odds. **Takeaway:** Avoid conflating *decisions* and *outcomes*. Good
 decisions will sometimes lead to bad outcomes (or the other way around). You should hone your
-decision-making process, while accepting that you can’t control every throw of the dice. [↑ Back to
-Contents](#contents)
+decision-making process, while accepting that you can’t control every throw of the dice.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Elements of Journalism](https://www.amazon.com/dp/0804136785)
 
@@ -225,7 +246,9 @@ about *who* produces the information, it is about the *discipline of verificatio
 of information is committed to. The authors assert with conviction that in the end, democracy lives
 or dies with a free press. **Takeaway:** Whether or not you have a journalistic bent, this book is a
 great resource for educating oneself on what to expect from journalists, and our own rights and
-responsibilities as citizens. [↑ Back to Contents](#contents)
+responsibilities as citizens.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Effective Engineer](https://www.amazon.com/dp/0996128107)
 
@@ -238,7 +261,9 @@ return on investment. Moreover, your *time* is your most precious asset that you
 carefully on high leverage tasks. **Takeaway:** Optimize your career for learning, not for a
 high-paying job. Adopt a growth mindset that sees intelligence as something you can continue to
 build. Hiring and developing great teams is one of the highest leverage activities you can embark
-upon. [↑ Back to Contents](#contents)
+upon.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [How Great Leaders Inspire Action](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
 
@@ -249,8 +274,9 @@ with *why* something matters if you want people to follow your lead. If you want
 product, you need to explain with conviction why it is a problem worth solving, followed by how you
 are going to do it. What you actually build ends up being the least important bit of the equation.
 **Takeaway:** You will seldom regret spending an extraordinary portion of your time explaining *why*
-it is important to solve a problem (and repeating yourself); don’t hop over this crucial step. [↑
-Back to Contents](#contents)
+it is important to solve a problem (and repeating yourself); don’t hop over this crucial step.  
+[↑
+Back to Top](#contents)
 
 ### [The Selfish Gene](https://www.amazon.com/dp/B0722G5V92)
 
@@ -265,7 +291,9 @@ is the fundamental unit of natural selection, and evolution is the inevitable co
 self-replicating behavior having a small nonzero error rate. **Takeaway:** Selection as a pathway to
 emergent design is an idea that works well even in software. It is sometimes useful to sacrifice
 efficiency in the short term, let solutions compete with each other and allow the solution with
-greater ‘fitness’ to win in an organic fashion. [↑ Back to Contents](#contents)
+greater ‘fitness’ to win in an organic fashion.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Ancestor’s Tale](https://www.amazon.com/dp/B01K6G1H4K)
 
@@ -280,7 +308,9 @@ Organisms don’t evolve in isolation, but do so as a result of complex (and som
 interactions between the phenotypic effects of genes and their ever-changing environment. **Takeaway:**
 Life can be seen as a complex interaction between billions of self-replicating bits that want to
 procreate. Sometimes, they play adversarial roles against each other, but more often than not, they
-find ways to co-operate and thrive. [↑ Back to Contents](#contents)
+find ways to co-operate and thrive.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Story of Human Language](https://www.audible.com/pd/The-Story-of-Human-Language-Audiobook/B00DGBECNG)
 
@@ -297,7 +327,9 @@ of how it frequently gets used in a particular context. The meaning of words lik
 (‘extremely impressive’), *nice* (in the last century, ‘fine or subtle’), *silly* (in 1400s,
 ‘blessed’) have changed drastically over time. **Takeaway:** Human language is an ever-changing
 beast; in the bigger scheme of things, how we express ourselves today is just a fleeting aspect of
-humanity. [↑ Back to Contents](#contents)
+humanity.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Origin of Consciousness](https://www.amazon.com/dp/B009MBTRHA)
 
@@ -314,7 +346,9 @@ digested the ideas in this book that I could actually think without being consci
 without accepting that small delay of doubt between thought and action – and I found this kind of
 ‘living in the moment’ quite liberating. Further, I realized that what I thought of as ‘thoughts’
 were actually my conscious reflections on thoughts that had already been had. All of my *real*
-thinking actually happened in the background, without my notice. [↑ Back to Contents](#contents)
+thinking actually happened in the background, without my notice.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Through Two Doors at Once](https://www.amazon.com/dp/1101986107)
 
@@ -325,8 +359,9 @@ strangeness, the *double slit experiment*. What makes this book unique amongst o
 books of this age is that it eschews theory and philosophy in favor of describing what we know to be
 true from real experiments. **Takeaway:** Quantum physics is unusual in that it helps us make useful
 predictions, but nevertheless we do not “understand” it; this book highlights the good old
-experiments and revives a sense of mystery and wonder within our hearts. [↑ Back to
-Contents](#contents)
+experiments and revives a sense of mystery and wonder within our hearts.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [How We Learn](https://www.amazon.com/dp/B07S1K4TB2)
 
@@ -339,8 +374,9 @@ factors shape and refine our abilities in early years of childhood. The author d
 popular beliefs such as babies being ‘blank slates’, arguing that humans are born with innate
 neurological circuits designed to make sense of objects, arithmetic and empirical statistics.
 **Takeaway:** This is a worthwhile book for anyone curious about the human learning process, especially
-for those who’d like to contrast it with artificial intelligence algorithms. [↑ Back to
-Contents](#contents)
+for those who’d like to contrast it with artificial intelligence algorithms.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Artificial Intelligence](https://www.amazon.com/dp/B07MYWPQSK)
 
@@ -352,7 +388,9 @@ quest to build machines with ‘general intelligence’. The author takes us on 
 tools and techniques developed over the years, and gives us powerful insights into their inner
 workings, successes and shortcomings. **Takeaway:** I recommend this book highly to anyone new to the
 field, wanting to understand what’s what, and also to the casual reader who simply wants to learn
-about the evolution of AI and separate hype from reality. [↑ Back to Contents](#contents)
+about the evolution of AI and separate hype from reality.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Code Breaker](https://www.amazon.com/dp/1982115858)
 
@@ -369,8 +407,9 @@ story of the human race, the author also discusses the ethical challenges associ
 germline editing](https://en.wikipedia.org/wiki/Human_germline_engineering), now within reach.
 **Takeaway:** Unlike most biographies, this book deals with current events that are changing the
 world as we speak. This gives us the rare opportunity of learning about the challenges (both
-technical and ethical) in real time, and becoming a part of that story. [↑ Back to
-Contents](#contents)
+technical and ethical) in real time, and becoming a part of that story.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Cognitive Bias Field Manual](https://capablemen.com/guides/cognitive-bias/)
 
@@ -380,8 +419,9 @@ make decisions in the face of limited data, and it isn’t inherently bad. For i
 are what have helped us survive in the face of a multitude of dangers in our natural habitats
 through our evolutionary history. What we must be prepared to do, however, is to gain a deeper
 understanding our our own proclivity towards certain kinds of biases and devise mechanisms to
-counteract them where it makes sense to do so. **Takeaway:** Don’t blindly trust your own judgment. [↑
-Back to Contents](#contents)
+counteract them where it makes sense to do so. **Takeaway:** Don’t blindly trust your own judgment.  
+[↑
+Back to Top](#contents)
 
 ### [The Ethical Algorithm](https://www.amazon.com/dp/B07XLTXBXV)
 
@@ -393,7 +433,9 @@ legitimately claim authorship of algorithms. It provides an excellent introducti
 that we might encounter if we were to take a naive approach towards privacy and fairness. The
 authors provide a variety of real world examples to drive home their points. **Takeaway:** Challenges
 with privacy, fairness and ethics in the modern world of Big Data are fair more complicated than
-they might seem on the surface. [↑ Back to Contents](#contents)
+they might seem on the surface.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Deep Work](https://www.amazon.com/dp/1455586692)
 
@@ -404,8 +446,9 @@ all kinds of distractions, is one that is close to my heart. This book explains 
 important, and offers suggestions for executing on it. **Takeaway:** Develop the habits and discipline
 to eliminate distractions and focus your mind on what’s important. Donald Knuth [says on his
 website](https://www-cs-faculty.stanford.edu/~knuth/email.html), “My goal is to do this
-communication efficiently, in batch mode — like, one day every six months.” [↑ Back to
-Contents](#contents)
+communication efficiently, in batch mode — like, one day every six months.”  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [On Liberty](https://www.amazon.com/dp/B00A735PTG)
 
@@ -420,7 +463,8 @@ especially in a society that continues to change in its norms and values, year o
 attention to the blind spots of such enlightened philosophers. Consider for instance, that the
 author casually dismisses the idea that the notion of liberty would apply to supposedly
 ‘uncivilized’ societies: “Despotism is a legitimate mode of government in dealing with barbarians”.
-[↑ Back to Contents](#contents)
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Laws of Human Nature](ihttps://www.amazon.com/dp/B0848S1CJW)
 
@@ -431,8 +475,9 @@ that epitomize a set of *laws* of human nature. What I like most about this book
 extremely matter of fact with a healthy disregard for moral platitudes. Every anecdote associated
 with a character is followed by an analysis that surfaces the individual’s psychology, and presents
 us with lessons to be learned. **Takeaway:** This book is an invaluable resource for anyone who
-seeks to understand the world around them and be successful in their pursuits. [↑ Back to
-Contents](#contents)
+seeks to understand the world around them and be successful in their pursuits.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Never Split the Difference](https://www.amazon.com/dp/B018FHCPDO)
 
@@ -445,7 +490,9 @@ to negotiate in day-to-day situations. This is perhaps ironic, considering how m
 to improve our professional and personal lives if only we honed our ability to engage more
 effectively with others. **Takeaway:** Negotiating is more of a science than an art, leaning on human
 psychology. It is worth investing some energy in understanding how we might turn situations to our
-advantage. [↑ Back to Contents](#contents)
+advantage.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [I Am a Strange Loop](https://www.amazon.com/dp/B06XCD1C29)
 
@@ -458,7 +505,9 @@ or *soul stuff*. What’s more, I find rather convincing his position that consc
 and emergent property of self-referential thinking (aka *strange loops*). **Takeaway:** While many
 philosophers appear to get stuck in nonsensical loops of subject-object ambiguity, Hofstadter cuts
 through all of it and offers us something real. I found his ideas regarding how the consciousness of
-his late wife continues to live in his memories on rather touching. [↑ Back to Contents](#contents)
+his late wife continues to live in his memories on rather touching.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Mathematics for Human Flourishing](https://www.amazon.com/dp/0300237138)
 
@@ -468,7 +517,9 @@ This is *not* a book of mathematics. Rather, it is a beautiful ode to the human 
 splendor, with mathematics as the fundamental tool, both created as well as wielded by humankind in
 its pursuit for excellence. **Takeaway:** You might read Jane Austen for the sheer delight of
 digesting her words and the nuances gently treading between them. This book is of the same ilk, and
-I love that it is about mathematics. [↑ Back to Contents](#contents)
+I love that it is about mathematics.  
+
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Games People Play](https://www.amazon.com/dp/B005C6E76U)
 
@@ -481,6 +532,6 @@ it doesn’t seem to end on a very optimistic note, I find the idea encouraging 
 to look inward and discover the sources of our best and worst behaviors using the tools presented in
 this book. **Takeaway:** I have often found it helpful to consider the ego state — adult, parent, child
 — driving my own behavior, and leverage an understanding of it to alter my behavior in positive
-ways. Understanding constitutes the first step towards sustainable positive change. [↑ Back to
-Contents](#contents)
+ways. Understanding constitutes the first step towards sustainable positive change.  
+{{ link (class = "back-to-top", href = "#contents", text = "↑ Back to Top") }}
 

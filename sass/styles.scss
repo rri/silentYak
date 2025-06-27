@@ -468,6 +468,11 @@ p {
             -webkit-hyphens: auto;
             hyphens: auto;
             text-align: justify;
+
+            .back-to-top {
+                display: block;
+                text-align: right;
+            }
         }
 
         .post-tags {
