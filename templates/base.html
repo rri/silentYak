@@ -102,10 +102,16 @@
         {% endif %}
 
         {% if icon_only %}
-        <a href="/{{ href }}" title="{{ title }}"><span class="toolbar-item-content">{{ icon }}</span></a>
+        {% set content = icon %}
         {% else %}
-        <a href="/{{ href }}" title="{{ title }}"><span class="toolbar-item-content">{{ icon }} {{ title }}</span></a>
+        {% set content = icon ~ " " ~ title %}
         {% endif %}
+
+        <div class="toolbar-item">
+            <a href="/{{ href }}" title="{{ title }}">
+                <span class="toolbar-item-content">{{ content }}</span>
+            </a>
+        </div>
         {% endmacro print_pinned %}
 
         {% set has_pinned_icons = config.extra.pinned_icons is defined and config.extra.pinned_icons | length > 0 %}

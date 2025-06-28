@@ -376,6 +376,7 @@ p {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
         display: flex;
+        column-gap: var(--spacing-md);
         font-family: var(--font-heading);
         justify-content: flex-end;
         padding: var(--spacing-md);
@@ -386,11 +387,16 @@ p {
             padding: var(--spacing-sm) var(--spacing-md);
             text-decoration: none;
             transition: var(--transition);
-            border-radius: var(--border-radius);
+            border-radius: calc(var(--border-radius) * 2);
 
             &:hover {
                 background-color: var(--logo-color);
             }
+        }
+
+        .toolbar-item {
+            border: var(--line-width) solid var(--line-color);
+            border-radius: calc(var(--border-radius) * 2);
         }
 
         .toolbar-spacer {
