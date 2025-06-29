@@ -81,6 +81,8 @@
         --line-color: #cecdb5;
         --link-color: #800000;
         --link-hover-color: #a00000;
+        --note-back-color: #f8f6f0;
+        --note-fore-color: #5a5a5a;
         --accent-color: #d4af37;
         --highlight-color: #fff5e6;
         --muted-color: #6b6b6b;
@@ -97,6 +99,8 @@
         --line-color: #404040;
         --link-color: #ff6b6b;
         --link-hover-color: #ff8e8e;
+        --note-back-color: #2d2a24;
+        --note-fore-color: #b8b0a6;
         --accent-color: #fdfd96;
         --highlight-color: #2a2520;
         --muted-color: #a0a0a0;
@@ -560,6 +564,24 @@ p {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
+            }
+        }
+
+        .note {
+            font-size: 0.95em;
+            background-color: var(--note-back-color);
+            color: var(--note-fore-color);
+            border-left: 3px solid var(--accent-color);
+            box-shadow: var(--drop-shadow-inner);
+            align-items: center;
+            display: flex;
+            column-gap: var(--spacing-md);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+
+            .note-icon {
+                font-size: 2em;
             }
         }
 
