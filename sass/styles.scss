@@ -104,7 +104,7 @@
         --accent-color: #fdfd96;
         --highlight-color: #2a2520;
         --muted-color: #a0a0a0;
-        --header-filter: sepia(40%) saturate(1.6) hue-rotate(30deg) brightness(0.55) contrast(1.25);
+        --header-filter: invert(1) hue-rotate(180deg) brightness(0.6) contrast(1.2);
     }
 }
 
