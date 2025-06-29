@@ -248,7 +248,7 @@ p {
     .header {
         align-items: center;
         background-image: var(--background-header);
-        background-size: 100% 100%;
+        background-repeat: repeat;
         display: flex;
         justify-content: stretch;
         padding: var(--spacing-md);
@@ -262,8 +262,7 @@ p {
             right: 0;
             bottom: 0;
             background-image: var(--background-header);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             filter: var(--header-filter);
             transition: var(--transition);
         }
