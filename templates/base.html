@@ -81,7 +81,7 @@
                 <div class="search-results-items"></div>
             </div>
         </div>
-        {% macro print_pinned(icon_only, item) %}
+        {% macro print_pinned(item) %}
 
         {% if item.title %}
         {% set title = item.title %}
@@ -95,14 +95,14 @@
         {% set href = "" %}
         {% endif %}
 
-        {% if item.icon %}
+        {% if item.icon is defined %}
         {% set icon = item.icon %}
         {% else %}
         {% set icon = "📌" %}
         {% endif %}
 
-        {% if icon_only %}
-        {% set content = icon %}
+        {% if icon == "" %}
+        {% set content = title %}
         {% else %}
         {% set content = icon ~ " " ~ title %}
         {% endif %}
@@ -114,21 +114,13 @@
         </div>
         {% endmacro print_pinned %}
 
-        {% set has_pinned_icons = config.extra.pinned_icons is defined and config.extra.pinned_icons | length > 0 %}
         {% set has_pinned_links = config.extra.pinned_links is defined and config.extra.pinned_links | length > 0 %}
-        {% set has_pinned = has_pinned_icons or has_pinned_links %}
 
-        {% if has_pinned %}
+        {% if has_pinned_links %}
         <div class="toolbar">
-            {% if config.extra.pinned_icons is defined %}
-            {% for item in config.extra.pinned_icons %}
-            {{ self::print_pinned(icon_only=true, item=item) }}
-            {% endfor %}
-            {% endif %}
-            <div class="toolbar-spacer"></div>
             {% if config.extra.pinned_links is defined %}
             {% for item in config.extra.pinned_links %}
-            {{ self::print_pinned(icon_only=false, item=item) }}
+            {{ self::print_pinned(item=item) }}
             {% endfor %}
             {% endif %}
         </div>
