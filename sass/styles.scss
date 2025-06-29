@@ -394,11 +394,6 @@ p {
             }
         }
 
-        .toolbar-item {
-            border: var(--line-width) solid var(--line-color);
-            border-radius: calc(var(--border-radius) * 2);
-        }
-
         .toolbar-spacer {
             flex: 1;
         }
