@@ -87,6 +87,7 @@
         --highlight-color: #fff5e6;
         --muted-color: #6b6b6b;
         --header-filter: none;
+        --icon-logo-filter: drop-shadow(var(--drop-shadow));
     }
 }
 
@@ -105,6 +106,7 @@
         --highlight-color: #2a2520;
         --muted-color: #a0a0a0;
         --header-filter: invert(1) hue-rotate(180deg) brightness(0.6) contrast(1.2);
+        --icon-logo-filter: invert(1) hue-rotate(180deg) saturate(1.2) brightness(0.8) drop-shadow(var(--drop-shadow));
     }
 }
 
@@ -273,7 +275,7 @@ p {
             -webkit-user-select: none;
             user-select: none;
             transition: var(--transition);
-            filter: drop-shadow(var(--drop-shadow));
+            filter: var(--icon-logo-filter);
         }
 
         .invert {
