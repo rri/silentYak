@@ -57,9 +57,9 @@ On the client ---
 * Step 6: Test your SSH connectivity.
 * Step 7: DONE!
 
-To set up Step 5 on the client-side, you can create a simple [knock](knock.txt) script in your `PATH`,
-make it executable, and [configure your SSH client](ssh_config.txt) to execute it automatically
-before connecting to your server.
+To set up Step 5 on the client-side, you can create a simple [knock](knock.sh.txt) script in your
+`PATH`, make it executable, and [configure your SSH client](ssh_config.txt) to execute it
+automatically before connecting to your server.
 
 ✓ Test that you can once again connect over SSH.
 
