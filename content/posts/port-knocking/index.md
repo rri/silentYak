@@ -45,9 +45,9 @@ On the server ---
 Steps 1 and 2 are usually specific to the Linux distribution you use, and I would recommend looking
 up its documentation. For reference, [Gentoo's documentation](https://wiki.gentoo.org/wiki/Nftables)
 can provide a general idea of how this is done. Step 3 is accomplished using `nftables`
-[rules](nftables-rules.txt) that you can load (and save). Step 4 is router-dependent. For instance,
-my **eero** app has a relevant section in *Settings → Network settings → Reservations & port
-forwarding*.
+[rules](nftables-rules.3287e25f.txt) that you can load (and save). Step 4 is router-dependent. For
+instance, my **eero** app has a relevant section in *Settings → Network settings → Reservations &
+port forwarding*.
 
 ✗ Test that you can no longer connect directly over SSH.
 
@@ -57,9 +57,9 @@ On the client ---
 * Step 6: Test your SSH connectivity.
 * Step 7: DONE!
 
-To set up Step 5 on the client-side, you can create a simple [knock](knock.sh.txt) script in your
-`PATH`, make it executable, and [configure your SSH client](ssh_config.txt) to execute it
-automatically before connecting to your server.
+To set up Step 5 on the client-side, you can create a simple [knock](knock.e93f3b0b.txt) script in
+your `PATH`, make it executable, and [configure your SSH client](ssh_config.b8a03c9e.txt) to execute
+it automatically before connecting to your server.
 
 ✓ Test that you can once again connect over SSH.
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Rename this script to `knock.sh` before adding it to your `PATH` and making it executable.
+# Rename this script to `knock` before adding it to your `PATH` and making it executable.
 
 HOST=$1
 
