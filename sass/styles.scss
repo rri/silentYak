@@ -447,7 +447,7 @@ p {
             font-size: x-large;
             color: var(--fore-color);
             transition: var(--transition);
-            margin-bottom: var(--spacing-sm);
+            margin: var(--spacing-md) 0 var(--spacing-sm) 0;
 
             &:hover {
                 color: var(--link-color);
