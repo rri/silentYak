@@ -411,7 +411,7 @@ p {
     }
 
     .content {
-        .post, .comment {
+        .post {
             border: var(--line-width) solid transparent;
             border-top-color: var(--line-color);
             display: flex;
@@ -474,8 +474,7 @@ p {
             margin-bottom: var(--spacing-sm);
         }
 
-        .post-content,
-        .comment-content {
+        .post-content {
             font-size: 1.1em;
             -webkit-hyphens: auto;
             hyphens: auto;
@@ -483,7 +482,7 @@ p {
 
             .back-to-top {
                 display: block;
-                text-align: right;
+                text-align: end;
             }
         }
 
@@ -611,12 +610,12 @@ p {
             }
 
             .newer {
-                text-align: right;
+                text-align: end;
                 flex: 1;
             }
 
             .older {
-                text-align: left;
+                text-align: start;
             }
         }
     }
