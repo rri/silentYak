@@ -88,6 +88,7 @@
         --muted-color: #6b6b6b;
         --header-filter: none;
         --icon-logo-filter: drop-shadow(var(--drop-shadow));
+        --background-lightbox: rgba(0, 0, 0, 1.0);
     }
 }
 
@@ -107,6 +108,7 @@
         --muted-color: #a0a0a0;
         --header-filter: invert(1) hue-rotate(180deg) brightness(0.6) contrast(1.2);
         --icon-logo-filter: invert(1) hue-rotate(180deg) saturate(1.2) brightness(0.8) drop-shadow(var(--drop-shadow));
+        --background-lightbox: rgba(0, 0, 0, 1.0);
     }
 }
 
@@ -133,10 +135,13 @@ body,
 p,
 ul,
 ol,
-li {
+li,
+figure,
+dialog {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 pre {
@@ -153,6 +158,10 @@ body {
     line-height: 1.8em;
     min-width: var(--min-page-width);
     transition: var(--transition);
+
+    &:has(dialog:target) {
+        overflow: hidden;
+    }
 }
 
 ul,
@@ -180,6 +189,16 @@ a:active {
 
 a:hover {
     color: var(--link-hover-color);
+}
+
+a[href^="#figure-"] {
+    cursor: zoom-out;
+    display: block;
+    width: 100%;
+}
+
+a[href^="#lightbox-"] {
+    cursor: zoom-in;
 }
 
 button:focus,
@@ -551,26 +570,25 @@ p {
 
             .lightbox {
                 display: none;
+                justify-content: center;
                 position: fixed;
-                z-index: 999;
+                z-index: 2;
                 top: 0;
                 left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.9);
+                width: 100%;
+                height: 100%;
+                background: var(--background-lightbox);
                 padding: var(--spacing-lg);
             }
 
             .lightbox:target {
-                display: block;
+                display: flex;
             }
 
-            .lightbox div {
+            .lightbox img {
+                object-fit: contain;
                 width: 100%;
                 height: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
             }
         }
 
