@@ -598,16 +598,12 @@ p {
             color: var(--note-fore-color);
             border-left: 3px solid var(--accent-color);
             box-shadow: var(--drop-shadow-inner);
-            align-items: center;
             display: flex;
+            align-items: center;
             column-gap: var(--spacing-md);
             padding: var(--spacing-lg);
             margin: var(--spacing-lg) 0;
             border-radius: var(--border-radius);
-
-            .note-icon {
-                font-size: 2em;
-            }
         }
 
         .nav {
