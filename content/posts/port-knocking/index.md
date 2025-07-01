@@ -37,10 +37,10 @@ Here's how you get this going:
 
 On the server ---
 
-* Step 1: Enable `netfilter` in your Linux kernel for packet sniffing.
-* Step 2: Set up the `nftables` firewall to start automatically.
-* Step 3: Configure a port knocking sequence in your firewall rules.
-* Step 4: Open up the relevant ports on your home network router firewall.
+* **Step 1:** Enable `netfilter` in your Linux kernel for packet sniffing.
+* **Step 2:** Set up the `nftables` firewall to start automatically.
+* **Step 3:** Configure a port knocking sequence in your firewall rules.
+* **Step 4:** Open up the relevant ports on your home network router firewall.
 
 Steps 1 and 2 are usually specific to the Linux distribution you use, and I would recommend looking
 up its documentation. For reference, [Gentoo's documentation](https://wiki.gentoo.org/wiki/Nftables)
@@ -53,9 +53,9 @@ port forwarding*.
 
 On the client ---
 
-* Step 5: Set up your SSH configuration to knock on ports.
-* Step 6: Test your SSH connectivity.
-* Step 7: DONE!
+* **Step 5:** Set up your SSH configuration to knock on ports.
+* **Step 6:** Test your SSH connectivity.
+* **Step 7:** DONE!
 
 To set up Step 5 on the client-side, you can create a simple [knock](knock.e93f3b0b.txt) script in
 your `PATH`, make it executable, and [configure your SSH client](ssh_config.b8a03c9e.txt) to execute
