@@ -85,4 +85,6 @@ killall -HUP xsettingsd
 ```
 
 For the script above to work, you **must first install** the `gnome-themes-standard` and
-`xsettingsd` packages on Gentoo, or their equivalent packages on other Linux distributions.
+`xsettingsd` packages on Gentoo, or their equivalent packages on other Linux distributions. You also
+need to have the `xsettingsd` process running, which I've started up in my `.xinitrc` startup
+script.
