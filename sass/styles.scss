@@ -289,13 +289,17 @@ p {
             transition: var(--transition);
         }
 
-        .icon, .logo {
-            max-height: 60px;
-            max-width: 100%;
-            -webkit-user-select: none;
-            user-select: none;
-            transition: var(--transition);
-            filter: var(--icon-logo-filter);
+        a {
+            border-bottom: none;
+
+            .icon, .logo {
+                max-height: 60px;
+                max-width: 100%;
+                -webkit-user-select: none;
+                user-select: none;
+                transition: var(--transition);
+                filter: var(--icon-logo-filter);
+            }
         }
 
         .invert {
