@@ -27,6 +27,8 @@ the bottom of the screen.
 
 ![Desktop: Dark Mode](desktop-d.webp "Desktop: Dark Mode (i3 with Gentoo Linux)")
 
+## Details
+
 The toolbar at the bottom is rendered by [i3blocks](https://github.com/vivien/i3blocks), with the
 following configuration block:
 
