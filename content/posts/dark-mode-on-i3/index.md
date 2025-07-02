@@ -43,50 +43,43 @@ The `switch-theme` script that the command above invokes is quite simple:
 ```bash
 #!/bin/bash
 #
-# Script to toggle light and dark modes on GTK instantaneously.
+# Script to toggle GTK light & dark modes.
 #
-# The theme is toggled by using the `xsettingsd` daemon that
-# should already be running. The `.xsettingsd` configuration
-# file is updated to set a theme value, which is a line in
-# the file that is exactly one of the following:
+# The mode is toggled by using the `xsettingsd` daemon,
+# which should already be running. The `.xsettingsd`
+# configuration file is updated, with exactly one of the
+# following values:
 #
-# Net/ThemeName "Adwaita"     # Light theme
-# Net/ThemeName "AdwaitaDark" # Dark theme
+# Net/ThemeName "Adwaita"     # Light Net/ThemeName
+# "AdwaitaDark" # Dark
 #
-# Note that both the themes Adwaita and Adwaita-dark must
-# already be installed on the system.
+# Note that the Adwaita and Adwaita-dark themes must already
+# be installed on the system.
 #
-# The last step of the script sends the HUP signal to the
-# xsettingsd daemon, which causes the setting to take
-# effect immediately.
-#
+# The script sends a HUP signal to the process, causing the
+# setting to take effect at once.
+
 set -euxo pipefail
 
-CONFIG_PATH="$HOME/.xsettingsd"
-
-L_THEME="Adwaita"
-D_THEME="Adwaita-dark"
-
-OLD_THEME=$(pcregrep -o1 'Net/ThemeName "(.*)"' "$CONFIG_PATH")
+CFG_PATH="$HOME/.xsettingsd"
+DEF_THEME="Adwaita"
+ALT_THEME="Adwaita-dark"
+OLD_THEME=$(pcregrep -o1 'Net/ThemeName "(.*)"' "$CFG_PATH")
+KEY="Net/ThemeName"
 
 if [ "$?" -eq 0 ]
 then
-    NEW_THEME="$L_THEME"
-    if [ "$OLD_THEME" == "$L_THEME" ]
-    then
-        NEW_THEME="$D_THEME"
-    fi
-    sed -i \
-        's/Net\/ThemeName "'$OLD_THEME'"/Net\/ThemeName "'$NEW_THEME'"/' \
-        "$CONFIG_PATH"
+    NEW_THEME=$([ "$OLD_THEME" == "$DEF_THEME" ] &&        \
+        echo -ne $ALT_THEME ||                             \
+        echo -ne $DEF_THEME)
+    sed -i 's#'$KEY' .*#'$KEY' "'$NEW_THEME'"#' "$CFG_PATH"
 else
-    echo 'Net/ThemeName "'$L_THEME'"' >> "$CONFIG_PATH"
+    echo $KEY' "'$DEF_THEME'"' >> "$CFG_PATH"
 fi
 
 killall -HUP xsettingsd
 ```
 
-For the script above to work, you **must first install** the `gnome-themes-standard` and
-`xsettingsd` packages on Gentoo, or their equivalent packages on other Linux distributions. You also
-need to have the `xsettingsd` process running, which I've started up in my `.xinitrc` startup
-script.
+For the script above to work, you **must first install** the *gnome-themes-standard* and
+*xsettingsd* packages on Gentoo, or their equivalents on other Linux distributions. You also need to
+have the *xsettingsd* process running, which I've added to my `.xinitrc` startup script.
