@@ -50,8 +50,8 @@ The `switch-theme` script that the command above invokes is quite simple:
 # configuration file is updated, with exactly one of the
 # following values:
 #
-# Net/ThemeName "Adwaita"     # Light Net/ThemeName
-# "AdwaitaDark" # Dark
+# Net/ThemeName "Adwaita"     # Light
+# Net/ThemeName "AdwaitaDark" # Dark
 #
 # Note that the Adwaita and Adwaita-dark themes must already
 # be installed on the system.
