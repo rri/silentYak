@@ -181,9 +181,10 @@ a:link,
 a:visited,
 a:focus,
 a:active {
+    border-bottom: var(--line-width) dashed var(--link-color);
     color: var(--link-color);
     outline: none;
-    text-decoration: underline;
+    text-decoration: none;
     transition: var(--transition);
 }
 
@@ -413,7 +414,7 @@ p {
                 display: inline-flex;
                 align-items: center;
                 padding: var(--spacing-sm) var(--spacing-md);
-                text-decoration: none;
+                border-bottom: none;
                 transition: var(--transition);
                 border-radius: calc(var(--border-radius) * 2);
 
@@ -481,7 +482,7 @@ p {
             }
 
             a {
-                text-decoration: none;
+                border-bottom: none;
             }
         }
 
@@ -510,7 +511,7 @@ p {
             column-gap: var(--spacing-md);
 
             a {
-                text-decoration: none;
+                border-bottom: none;
 
                 .tag {
                     font-family: var(--font-mono);
@@ -615,7 +616,7 @@ p {
             padding: var(--spacing-lg) var(--spacing-md);
 
             a {
-                text-decoration: none;
+                border-bottom: none;
             }
 
             .older, .newer {
