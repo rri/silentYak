@@ -57,6 +57,7 @@
     --outline-width: 2px;
     --spacing-base: 0.5em;
     --border-radius: 2px;
+    --area-height: 400px;
     --dropdown-max-height: 400px;
     --animation-duration: 0.6s;
     --animation-offset: 10px;
@@ -532,12 +533,16 @@ p {
 
             .msg {
                 font-style: italic;
-                padding-top: var(--spacing-xl);
+                padding: var(--spacing-xl) 0;
                 text-align: center;
             }
 
             .map {
+                background-image: url("world.svg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
                 padding-top: var(--spacing-xl);
+                height: var(--area-height);
                 width: 100%;
             }
         }
