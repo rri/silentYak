@@ -13,11 +13,11 @@ mile away from the trailhead. In fact, it was so busy initially that we had a la
 blocking our path ahead on the trail and I started regretting my choice of hike. But fortunately, we
 managed to break through the crowd and sprint ahead.
 
-{{ note (text = "People who are inconsiderate enough to park their cars with unnecessary gaps, thus
-depriving others of precious parking spots — some say these are the folks who end up in “Parking
-Hell” when they die...where they're forced to drive around mindlessly looking for parking spots, and
-everytime they find one, someone else swoops in and takes it from them. (Some others disagree, they
-say they just get sent to Capitol Hill in Seattle to find parking.)") }}
+> People who are inconsiderate enough to park their cars with unnecessary gaps, thus depriving
+> others of precious parking spots --- some say these are the folks who end up in "Parking Hell"
+> when they die...where they're forced to drive around mindlessly looking for parking spots, and
+> everytime they find one, someone else swoops in and takes it from them. (Some others disagree,
+> they say they just get sent to Capitol Hill in Seattle to find parking.)
 
 This might be a bit of a quirk, but when it's just us, Anu and I prefer to get to the turnaround
 point of the hike as quickly as possible. We might take a break every couple of miles to have a few
