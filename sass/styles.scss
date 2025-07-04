@@ -180,11 +180,6 @@ ol {
     padding: var(--spacing-md) 0;
 }
 
-li {
-    margin-left: var(--spacing-md);
-    padding-left: var(--spacing-md);
-}
-
 a,
 a:link,
 a:visited,
@@ -545,6 +540,10 @@ p {
                     list-style: none;
                     padding-inline-start: var(--spacing-xl);
                     text-indent: calc(var(--spacing-xl) * -1);
+
+                    input {
+                        width: auto;
+                    }
                 }
             }
         }
