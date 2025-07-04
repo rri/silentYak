@@ -6,6 +6,8 @@ authors = ["Ramnath R Iyer"]
 tags = ["poem"]
 +++
 
+{{ nowrap() }}
+
 > I wrote this poem circa 2012, about 13 years ago. I think *Try* is about reconciling the messiness
 > of real life with the romantic idealism of one's inner child. You might draw parallels between
 > this poem and Richard Linklater’s trilogy of [Before

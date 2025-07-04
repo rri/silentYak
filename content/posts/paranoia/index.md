@@ -6,6 +6,8 @@ authors = ["Ramnath R Iyer"]
 tags = ["poem"]
 +++
 
+{{ nowrap() }}
+
 > I wrote this poem circa 2005, about 20 years ago. Normally, I wouldn't care too much about
 > something written ages ago, but I make an exception for poetry when it has continued to resonate
 > with me at a deeper level. To me, each poem feels like an emotion that is frozen in time... The
