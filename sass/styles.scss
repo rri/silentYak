@@ -530,7 +530,7 @@ p {
         }
 
         .post-content {
-            font-size: 1.1em;
+            font-size: clamp(0.7em, 6vw - 0.8em, 1.1em);
             -webkit-hyphens: auto;
             hyphens: auto;
             text-align: justify;
