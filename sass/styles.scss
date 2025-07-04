@@ -540,8 +540,12 @@ p {
                 text-align: end;
             }
 
-            .nowrap ~ p {
-                white-space: nowrap;
+            .indent ~ ul {
+                li {
+                    list-style: none;
+                    padding-inline-start: var(--spacing-xl);
+                    text-indent: calc(var(--spacing-xl) * -1);
+                }
             }
         }
 
