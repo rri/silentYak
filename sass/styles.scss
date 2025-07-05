@@ -73,6 +73,12 @@
     --spacing-xl: calc(var(--spacing-base) * 4);  /* 2em */
 }
 
+@media (prefers-reduced-motion) {
+    :root {
+        --transition: none;
+    }
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --color-scheme: light;
@@ -589,8 +595,35 @@ p {
             }
         }
 
-        .lstbox {
-            margin-top: var(--spacing-lg);
+        .tag-cloud {
+            border: var(--line-width) solid transparent;
+            border-top-color: var(--line-color);
+            border-bottom-color: var(--line-color);
+            list-style: none;
+            margin: var(--spacing-lg) auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            line-height: 2em;
+            max-width: 75%;
+
+            .tag {
+                &[data-weight="1"] { --tag-size: 1; }
+                &[data-weight="2"] { --tag-size: 2; }
+                &[data-weight="3"] { --tag-size: 3; }
+                &[data-weight="4"] { --tag-size: 4; }
+                &[data-weight="5"] { --tag-size: 5; }
+                &[data-weight="6"] { --tag-size: 6; }
+                &[data-weight="7"] { --tag-size: 7; }
+                &[data-weight="8"] { --tag-size: 8; }
+                &[data-weight="9"] { --tag-size: 9; }
+
+                display: block;
+                padding: 0 var(--spacing-sm);
+                position: relative;
+                font-size: calc(var(--tag-size) * 0.5em + 0.5em);
+            }
         }
 
         .footnote-definition {

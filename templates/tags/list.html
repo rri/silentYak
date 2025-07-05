@@ -4,11 +4,11 @@
 <div class="page-title">
     {{ taxonomy.name | capitalize }}
 </div>
-<ul type="square" class="lstbox">
+<ul type="square" class="tag-cloud" role="navigation" aria-label="Tag Cloud">
     {% for term in terms %}
     <li>
         <a href="{{ term.permalink }}" title="View details">
-            <span class="tag">#{{ term.name }}</span>
+            <span class="tag" data-weight="{{ term.page_count }}">{{ term.name }}</span>
         </a>
     </li>
     {% endfor %}
