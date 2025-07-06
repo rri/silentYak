@@ -2,7 +2,6 @@
 title = "Port Knocking"
 date = 2025-06-23
 [taxonomies]
-authors = ["Ramnath R Iyer"]
 tags = ["home", "linux", "networking"]
 +++
 

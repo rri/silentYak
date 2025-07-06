@@ -2,7 +2,6 @@
 title = "KaTeX"
 date = 2025-07-04T21:21:00-07:00
 [taxonomies]
-authors = ["Ramnath R Iyer"]
 tags = ["typesetting", "wordpress"]
 +++
 

@@ -596,9 +596,6 @@ img + em, video + em {
         }
 
         .tag-cloud {
-            border: var(--line-width) solid transparent;
-            border-top-color: var(--line-color);
-            border-bottom-color: var(--line-color);
             list-style: none;
             margin: var(--spacing-lg) auto;
             display: flex;

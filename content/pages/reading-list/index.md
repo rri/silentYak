@@ -2,7 +2,6 @@
 title = "Reading List"
 date = 2025-06-21
 [taxonomies]
-authors = ["Ramnath R Iyer"]
 tags = ["meta"]
 +++
 

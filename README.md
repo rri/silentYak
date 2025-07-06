@@ -32,7 +32,6 @@ zero).
 title = "{TITLE}"
 date = {YYYY}-{MM}-{DD}
 [taxonomies]
-authors = ["{AUTHOR-1}", "{AUTHOR-2}"]
 tags = ["{TAG-1}", "{TAG-2}"]
 +++
 

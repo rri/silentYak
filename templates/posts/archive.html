@@ -12,7 +12,7 @@
     <div class="post-tags">
         {%- set tags = get_taxonomy(kind = 'tags') -%}
         {%- set tags_url = tags.permalink -%}
-        <a class="tags-link" href="{{ tags_url }}" title="View all tags">🔖</a>
+        <a class="tags-link" href="{{ tags_url }}" title="View all tags">☁️</a>
         {% for tag in page.taxonomies.tags %}
         <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all content tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
         {% endfor %}
