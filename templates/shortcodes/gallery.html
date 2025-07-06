@@ -2,8 +2,8 @@
 {% for asset in page.assets -%}
     {%- if asset is matching("/" ~ folder ~ "/") -%}
     {%- if asset is matching("[.](webp|jpg|png)$") -%}
-    {% set image = resize_image(path=asset, width=240, height=180) %}
-    {% set large = resize_image(path=asset, width=1024, height=768, op="fit") %}
+    {% set image = resize_image(path=asset, width=240, height=180, format="webp") %}
+    {% set large = resize_image(path=asset, width=1024, height=768, op="fit", format="webp") %}
     {% set uid = folder ~ "-" ~ rand ~ "-" ~ loop.index %}
     <figure id="figure-{{ uid }}">
         <a href="#lightbox-{{ uid }}">
