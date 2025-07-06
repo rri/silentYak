@@ -291,22 +291,22 @@ h2 {
 
 p {
     margin: var(--spacing-lg) 0;
+}
 
-    img {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-    }
+img, video {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
 
-    img + em {
-        display: block;
-        padding: var(--spacing-md) 0;
-        text-align: center;
+img + em, video + em {
+    display: block;
+    padding: var(--spacing-md) 0;
+    text-align: center;
 
-        &::before {
-            content: 'Figure: ';
-            font-weight: bolder;
-        }
+    &::before {
+        content: 'Figure: ';
+        font-weight: bolder;
     }
 }
 
@@ -667,8 +667,8 @@ p {
 
             .lightbox img {
                 object-fit: contain;
-                width: 100%;
                 height: 100%;
+                width: 100%;
             }
         }
 
