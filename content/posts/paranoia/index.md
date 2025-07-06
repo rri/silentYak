@@ -1,6 +1,6 @@
 +++
 title = "Paranoia"
-date = 2025-07-03T09:15:00-08:00
+date = 2025-07-03T09:15:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["poem"]
