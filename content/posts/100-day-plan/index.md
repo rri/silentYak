@@ -50,7 +50,7 @@ established *a priori*. It keeps your work grounded and minimizes "yak shaving".
 
 ![Yak Shaving](yak-shaving.webp "Yak Shaving")
 <em>Illustration by David Revoy. The character Pepper is depicted literally shaving a yak. License:
-[CC by 4.0](https://creativecommons.org/licenses/by/4.0/)</em>
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</em>
 
 Notice that the objective stated above has no target date. This is a distinguishing characteristic
 of a 100-day plan --- you don't worry about *when* it is going to get done; the journey matters more
