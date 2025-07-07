@@ -1,35 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<article class="post">
-    <div class="post-title">
-        {{ page.title }}
-    </div>
-    <div class="post-date">
-        {{ page.date | date(format="%A, %B %e, %Y") }}
-    </div>
-    {% if page.taxonomies.tags %}
-    <div class="post-tags">
-        {%- set tags = get_taxonomy(kind = 'tags') -%}
-        {%- set tags_url = tags.permalink -%}
-        <a class="tags-link" href="{{ tags_url }}" title="View all tags">☁️</a>
-        {% for tag in page.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all content tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
-        {% endfor %}
-    </div>
-    {% endif %}
-    <div class="post-content">
-        {% set section = get_section(path="posts/_index.md") %}
-        {% for year, pages in section.pages | group_by (attribute = "year") %}
-        <h2 class="index-year">
-            {{ year }}
-        </h2>
-        {% for page in pages %}
-        <div class="index-title">
-            <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
-        </div>
-        {% endfor %}
-        {% endfor %}
-    </div>
-</article>
+{% set archive = true %}
+{% set hide_author = true %}
+{% set hide_date = true %}
+{% include "posts/content.html" %}
 {% endblock %}

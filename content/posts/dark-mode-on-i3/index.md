@@ -2,6 +2,7 @@
 title = "Dark Mode On i3"
 date = 2025-07-01
 [taxonomies]
+authors = ["Ramnath R Iyer"]
 tags = ["gentoo", "linux", "i3"]
 +++
 

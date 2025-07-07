@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% include "pages/content.html" %}
+{% set hide_author = true %}
+{% set hide_date = true %}
+{% include "posts/content.html" %}
 {% endblock %}

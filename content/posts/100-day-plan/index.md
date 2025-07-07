@@ -2,6 +2,7 @@
 title = "100-Day Plan"
 date = 2025-07-04T08:30:00-07:00
 [taxonomies]
+authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
 +++
 

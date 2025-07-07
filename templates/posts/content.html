@@ -6,20 +6,54 @@
         {{ page.title }}
         {% endif %}
     </div>
+    {%- if not hide_author %}
+    <div class="post-authors">
+        {%- set authors = get_taxonomy(kind = "authors") -%}
+        {% for author in page.taxonomies.authors %}
+        <span class="author"><a href="{{ get_taxonomy_url(kind = "authors", name = author) }}" title="View all content authored by {{ author }}">{{ author }}</a></span>
+        {% endfor %}
+    </div>
+    {% endif -%}
+    {%- if not hide_date %}
     <div class="post-date">
         {{ page.date | date(format="%A, %B %e, %Y") }}
     </div>
-    {% if page.taxonomies.tags %}
+    {% endif -%}
+    {%- set tags = get_taxonomy(kind = "tags") -%}
+    {% if page.taxonomies.tags and tags | length > 0 %}
     <div class="post-tags">
-        {%- set tags = get_taxonomy(kind = 'tags') -%}
         {%- set tags_url = tags.permalink -%}
         <a class="tags-link" href="{{ tags_url }}" title="View all tags">☁️</a>
         {% for tag in page.taxonomies.tags %}
-        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}" title="View all content tagged as {{ tag }}"><span class="tag">#{{ tag }}</span></a>
+        <span class="tag"><a href="{{ get_taxonomy_url(kind = "tags", name = tag) }}" title="View all content tagged as {{ tag }}">#{{ tag }}</a></span>
         {% endfor %}
     </div>
     {% endif %}
     <div class="post-content">
+        {%- if archive %}
+        {% set section = get_section(path="posts/_index.md") %}
+        {% for year, pages in section.pages | group_by (attribute = "year") %}
+        <h2 class="index-year">
+            {{ year }}
+        </h2>
+        {% for page in pages %}
+        <div class="index-title">
+            <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+        </div>
+        {% endfor %}
+        {% endfor %}
+        {%- else -%}
+        {%- if page.toc and page.extra.toc %}
+        <h1>On This Page...</h1>
+        <ul>
+            {%- for h1 in page.toc %}
+            <li>
+                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            </li>
+            {% endfor -%}
+        </ul>
+        {% endif -%}
         {{ page.content | safe }}
+        {% endif -%}
     </div>
 </article>

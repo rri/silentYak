@@ -2,6 +2,7 @@
 title = "Everything Old Is New..."
 date = 2025-06-21
 [taxonomies]
+authors = ["Ramnath R Iyer"]
 tags = ["reflection"]
 +++
 

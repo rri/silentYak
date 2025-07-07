@@ -2,10 +2,11 @@
 
 {% block content %}
 <div class="term-heading">
-    <span class="tag">#{{ term.name }}</span>
+    <span class="author">{{ term.name }}</span>
 </div>
 {% for page in paginator.pages %}
 {% include "posts/content.html" %}
 {% endfor %}
 {% include "navigator/list.html" %}
 {% endblock %}
+

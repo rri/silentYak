@@ -498,7 +498,7 @@ img + em, video + em {
             }
         }
 
-        .page-title {
+        .term-heading {
             border-top: var(--line-width) solid var(--line-color);
             font-family: var(--font-heading);
             font-size: x-large;
@@ -511,7 +511,7 @@ img + em, video + em {
             }
         }
 
-        .post-title, .comment-title {
+        .post-title {
             font-family: var(--font-heading);
             font-size: x-large;
             color: var(--fore-color);
@@ -527,7 +527,7 @@ img + em, video + em {
             }
         }
 
-        .post-date, .comment-date {
+        .post-date {
             display: flex;
             flex-direction: column;
             color: var(--muted-color);
@@ -562,12 +562,31 @@ img + em, video + em {
         .post-tags {
             display: flex;
             column-gap: var(--spacing-md);
+            font-size: 0.9em;
 
             a {
                 text-decoration: none;
+            }
 
-                .tag {
-                    font-family: var(--font-mono);
+            .tag {
+                font-family: var(--font-mono);
+            }
+        }
+
+        .post-authors {
+            display: flex;
+            column-gap: var(--spacing-md);
+            font-size: 0.9em;
+
+            a {
+                text-decoration: none;
+            }
+
+            .author {
+                font-style: italic;
+
+                &:not(:last-of-type)::after {
+                    content: ";";
                 }
             }
         }

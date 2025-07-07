@@ -2,6 +2,7 @@
 title = "Quality"
 date = 2025-07-06T10:00:00-07:00
 [taxonomies]
+authors = ["Ramnath R Iyer"]
 tags = ["typesetting"]
 +++
 
