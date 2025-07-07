@@ -291,6 +291,11 @@ h2 {
 
 p {
     margin: var(--spacing-lg) 0;
+
+    img, video {
+        border: var(--line-width) solid var(--fore-color);
+        padding: var(--spacing-sm);
+    }
 }
 
 img, video {
@@ -640,6 +645,7 @@ img + em, video + em {
 
             .gallery-item {
                 border: var(--line-width) solid var(--fore-color);
+                padding: var(--spacing-sm);
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
