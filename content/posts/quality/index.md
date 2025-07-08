@@ -48,5 +48,6 @@ One wonders why, then, is it so difficult to encounter --- or create --- high qu
 day-to-day lives? Is it like the lottery --- you hear about the winners all the time, despite the 1
 in 292,201,338 chance that they've had to beat?
 
+{{ borderless() }}
 ![Crazy Straws](crazy-straws.webp "The new crowd is heavily shaped by this guy named Eric, who's basically the Paris Hilton of the amateur plastic crazy straw design world.")
 <em>Source: [xkcd.com](https://xkcd.com/1095/) by Randall Munroe. License: [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/)</em>
