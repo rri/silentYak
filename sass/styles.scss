@@ -557,6 +557,11 @@ img + em, video + em {
                     }
                 }
             }
+
+            .borderless + img,
+            .borderless + video {
+                border-color: transparent;
+            }
         }
 
         .post-tags {
