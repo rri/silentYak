@@ -18,6 +18,7 @@ website](https://wordpress.org/plugins/katex), to learn that the plugin had been
 that meant) as of July 9<sup>th</sup>, 2024, because of some **"Guideline Violation"**. What the
 heck!?
 
+{{ borderless() }}
 ![KaTeX Plugin](katex-notice.webp "Notice regarding KaTeX plugin on Wordpress.org website")
 
 Fortunately, it turned that the already-installed plugin was actually working just fine, all I had
