@@ -492,9 +492,30 @@ img + em, video + em {
             }
         }
 
-        .index-title {
-            &::before {
-                content: "→ ";
+        .index-record {
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+            column-gap: var(--spacing-sm);
+            flex-wrap: nowrap;
+
+            .index-date {
+                color: var(--muted-color);
+                font-size: 0.9em;
+                font-family: var(--font-mono);
+                flex-shrink: 0;
+            }
+
+            .index-title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                flex: 1;
+                min-width: 0;
+
+                &::before {
+                    content: "→ ";
+                }
             }
         }
 

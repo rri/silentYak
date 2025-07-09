@@ -37,8 +37,13 @@
             {{ year }}
         </h2>
         {% for page in pages %}
-        <div class="index-title">
-            <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+        <div class="index-record">
+            <div class="index-date">
+                {{ page.date | date(format="%Y-%m-%d") }}
+            </div>
+            <div class="index-title">
+                <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+            </div>
         </div>
         {% endfor %}
         {% endfor %}
