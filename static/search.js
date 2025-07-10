@@ -175,8 +175,6 @@ function initSearch() {
         }
     }, 150));
 
-    $search.style.display = 'inline-block';
-
     document.onkeyup = function(e) {
         var key = e.which || e.keyCode;
         if (key === 191) {

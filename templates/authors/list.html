@@ -2,10 +2,10 @@
 
 {% block content %}
 <article class="post">
-    <div class="post-title">
+    <div class="section-title">
         {{ taxonomy.name | capitalize }}
     </div>
-    <div class="post-content">
+    <div class="section-content">
         <ul type="square" class="authors" role="navigation" aria-label="Authors">
             {% for term in terms %}
             <li>

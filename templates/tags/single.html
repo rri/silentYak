@@ -4,7 +4,6 @@
 <div class="term-heading">
     <span class="tag">#{{ term.name }}</span>
 </div>
-{% set hide_author = true %}
 {% for page in paginator.pages %}
 {% include "posts/content.html" %}
 {% endfor %}

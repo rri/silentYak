@@ -4,6 +4,9 @@ date = 2025-06-21
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["meta"]
+[extra]
+hide_authors = true
+hide_date = true
 +++
 
 ```bash

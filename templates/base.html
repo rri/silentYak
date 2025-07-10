@@ -75,7 +75,7 @@
             </a>
             {% endif %}
         </div>
-        <div id="search" class="search">
+        <div id="search" class="search noscript">
             <input id="search-box" class="search-box" type="search" placeholder="Type text to search..." />
             <div class="search-results">
                 <div class="search-results-items"></div>
@@ -106,7 +106,6 @@
         {% else %}
         {% set content = icon ~ " " ~ title %}
         {% endif %}
-
         <div class="toolbar-item">
             <a href="/{{ href }}" title="{{ title }}">
                 <span class="toolbar-item-content">{{ content }}</span>
@@ -132,6 +131,7 @@
             &#169; {{ config.extra.copyright_info }}
         </div>
     </section>
+    <script type="text/javascript" src="{{ get_url(path='/script.js', cachebust=true) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='/elasticlunr.min.js', cachebust=true) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='/search_index.en.js', cachebust=true) }}"></script>
     <script type="text/javascript" src="{{ get_url(path='/search.js', cachebust=true) }}"></script>

@@ -8,6 +8,39 @@
 }
 
 @font-face {
+    font-family: "Crimson Text";
+    src: url("/fonts/CrimsonText-Regular.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    src: url("/fonts/CrimsonText-Italic.woff2") format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    src: url("/fonts/CrimsonText-Bold.woff2") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    src: url("/fonts/CrimsonText-BoldItalic.woff2") format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family: "Nunito";
     src: url("/fonts/Nunito-Regular.woff2") format('woff2');
     font-weight: 400;
@@ -51,6 +84,7 @@
     --min-page-width: 360px;
     --font-heading: "Nunito", sans-serif;
     --font-content: "Roboto Slab", serif;
+    --font-italics: "Crimson Text", serif;
     --font-mono: "Fira Mono", monospace;
     --base-font-size: 16px;
     --line-width: 1px;
@@ -266,13 +300,6 @@ a:focus {
     outline-offset: calc(var(--outline-width) / 4);
 }
 
-blockquote {
-    margin: var(--spacing-lg) 0;
-    padding: var(--spacing-md) var(--spacing-lg);
-    border-left: calc(4 * var(--line-width)) solid var(--accent-color);
-    background-color: var(--highlight-color);
-}
-
 h1, h2 {
     font-family: var(--font-heading);
     font-weight: normal;
@@ -286,6 +313,7 @@ h1 {
 
 h2 {
     font-size: 1.3em;
+    font-family: var(--font-italics);
     font-style: italic;
 }
 
@@ -296,6 +324,10 @@ p {
         border: var(--line-width) solid var(--fore-color);
         padding: var(--spacing-sm);
     }
+}
+
+em {
+    font-family: var(--font-italics);
 }
 
 img, video {
@@ -365,10 +397,13 @@ img + em, video + em {
         }
     }
 
+    .noscript {
+        display: none !important; // JavaScript (JS) is required for this element to work, so a JS call should set this to inline-block
+    }
+
     .search {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
-        display: none; // JavaScript (JS) is required for search to work, so a JS call sets this to inline-block
         padding: var(--spacing-md);
         position: relative;
 
@@ -472,12 +507,12 @@ img + em, video + em {
     }
 
     .content {
-        .post {
+        .section {
             border: var(--line-width) solid transparent;
             border-top-color: var(--line-color);
             display: flex;
             flex-direction: column;
-            gap: var(--spacing-md);
+            row-gap: var(--spacing-md);
             padding: var(--spacing-lg) var(--spacing-md);
             animation: fadeIn var(--animation-duration) ease-out;
         }
@@ -532,9 +567,9 @@ img + em, video + em {
             }
         }
 
-        .post-title {
+        .section-title {
             font-family: var(--font-heading);
-            font-size: x-large;
+            font-size: 1.5rem;
             color: var(--fore-color);
             transition: var(--transition);
             margin: var(--spacing-md) 0 var(--spacing-sm) 0;
@@ -548,7 +583,7 @@ img + em, video + em {
             }
         }
 
-        .post-date {
+        .section-date {
             display: flex;
             flex-direction: column;
             color: var(--muted-color);
@@ -556,8 +591,7 @@ img + em, video + em {
             margin-bottom: var(--spacing-sm);
         }
 
-        .post-content {
-            font-size: 1.1em;
+        .section-content {
             -webkit-hyphens: auto;
             hyphens: auto;
             text-align: justify;
@@ -583,11 +617,20 @@ img + em, video + em {
             .borderless + video {
                 border-color: transparent;
             }
+
+            blockquote,
+            .section {
+                margin: var(--spacing-lg) 0;
+                padding: var(--spacing-md) var(--spacing-lg);
+                border-left: calc(4 * var(--line-width)) solid var(--accent-color);
+                background-color: var(--highlight-color);
+            }
+
         }
 
-        .post-tags {
+        .section-tags {
             display: flex;
-            column-gap: var(--spacing-md);
+            gap: var(--spacing-md);
             font-size: 0.9em;
 
             a {
@@ -599,9 +642,9 @@ img + em, video + em {
             }
         }
 
-        .post-authors {
+        .section-authors {
             display: flex;
-            column-gap: var(--spacing-md);
+            gap: var(--spacing-md);
             font-size: 0.9em;
 
             a {
@@ -609,10 +652,31 @@ img + em, video + em {
             }
 
             .author {
+                font-family: var(--font-italics);
                 font-style: italic;
 
                 &:not(:last-of-type)::after {
                     content: ";";
+                }
+            }
+        }
+
+        .section-form {
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--spacing-lg);
+            align-items: stretch;
+            justify-content: center;
+            text-align: start;
+
+            .section-actions {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: var(--spacing-md);
+
+                .section-actions-spacer {
+                    flex: 1;
                 }
             }
         }
@@ -642,6 +706,14 @@ img + em, video + em {
                 padding-top: var(--spacing-xl);
                 height: var(--area-height);
                 width: 100%;
+            }
+        }
+
+        .footnote {
+            font-size: 0.8em;
+
+            &::before {
+                content: "† ";
             }
         }
 
@@ -728,7 +800,7 @@ img + em, video + em {
             box-shadow: var(--drop-shadow-inner);
             display: flex;
             align-items: center;
-            column-gap: var(--spacing-md);
+            gap: var(--spacing-md);
             padding: var(--spacing-lg);
             margin: var(--spacing-lg) 0;
             border-radius: var(--border-radius);
@@ -737,7 +809,7 @@ img + em, video + em {
         .nav {
             border: var(--line-width) solid transparent;
             border-top-color: var(--line-color);
-            column-gap: var(--spacing-xl);
+            gap: var(--spacing-xl);
             display: flex;
             justify-content: stretch;
             padding: var(--spacing-lg) var(--spacing-md);
@@ -758,17 +830,6 @@ img + em, video + em {
 
             .older {
                 text-align: start;
-            }
-        }
-
-        .post-actions {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: var(--spacing-md);
-
-            .post-actions-spacer {
-                flex: 1;
             }
         }
     }

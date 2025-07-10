@@ -4,6 +4,9 @@ date = 2025-06-21
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["meta"]
+[extra]
+hide_authors = true
+hide_date = true
 +++
 
 This is a curated list of material that I enthusiastically recommend to my readers, listed in suggested reading order (a suggestion you may choose to ignore). Every one of these books is one that I have *actually* read, and in each case I briefly explain *why* I think you should read the book. For a full list of books on my bookshelf, check out my [Goodreads profile](https://www.goodreads.com/review/list/80168041).

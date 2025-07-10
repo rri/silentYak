@@ -25,7 +25,7 @@ To create a new post, you must:
 
 [1] The new Markdown file should have content that looks like the template below. Anything in braces
 is a placeholder and must be replaced. You may have more than 1 author and any number of tags (even
-zero).
+zero). The `[extra]` section and its contents are optional (authors and dates are shown by default).
 
 ```
 +++
@@ -34,6 +34,9 @@ date = {YYYY}-{MM}-{DD}
 [taxonomies]
 authors = ["{AUTHOR-1}", "{AUTHOR-2}"]
 tags = ["{TAG-1}", "{TAG-2}"]
+[extra]
+hide_authors = true
+hide_date = true
 +++
 
 {CONTENT}
