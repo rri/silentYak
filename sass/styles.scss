@@ -401,6 +401,14 @@ img + em, video + em {
         display: none !important; // JavaScript (JS) is required for this element to work, so a JS call should set this to inline-block
     }
 
+    .blurry {
+        filter: blur(var(--spacing-lg));
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .search {
         border: var(--line-width) solid transparent;
         border-top-color: var(--line-color);
@@ -425,7 +433,6 @@ img + em, video + em {
             box-shadow: var(--drop-shadow-modal);
             border: var(--line-width) solid var(--line-color);
             border-radius: calc(var(--border-radius) * 2);
-            display: none;
             padding: var(--spacing-md);
             overflow: auto;
             max-height: var(--dropdown-max-height);
@@ -467,6 +474,10 @@ img + em, video + em {
                         color: var(--muted-color);
                         overflow: hidden;
                         text-overflow: ellipsis;
+
+                        .search-term {
+                            font-weight: bold;
+                        }
                     }
                 }
             }
