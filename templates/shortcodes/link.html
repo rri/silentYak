@@ -1,7 +1,7 @@
 <a href="{{ href }}" class="{{ class }}" title="
-    {% if title is defined %}
+    {%- if title is defined %}
     {{- title -}}
     {% else %}
     {{- text -}}
-    {% endif %}
+    {% endif -%}
 ">{{- text -}}</a>
