@@ -1,7 +1,6 @@
 <div class="gallery">
 {% for asset in page.assets %}
-    {% if asset is matching("/" ~ folder ~ "/") %}
-    {% if asset is matching("[.](webp|jpg|png)$") %}
+    {% if asset is matching(page.slug ~ "/" ~ folder ~ "/[^/]*[.](webp|jpg|png)$") %}
     {% set image = resize_image(path=asset, width=240, height=180, format="webp") %}
     {% set large = resize_image(path=asset, width=1024, height=768, op="fit", format="webp") %}
     {% set uid = folder ~ "-" ~ rand ~ "-" ~ loop.index %}
@@ -15,7 +14,6 @@
             <img src="{{ large.url }}" loading="lazy" alt="" />
         </a>
     </dialog>
-        {% endif %}
     {% endif %}
 {% endfor %}
 </div>
