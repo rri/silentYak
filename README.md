@@ -17,7 +17,9 @@ To create a new post, you must:
 
 - Become a collaborator on this repository.
 - Clone the repository.
-- Create a new Markdown file [1] in the `content` directory.
+- For each post, create a new folder structure with:
+  - `mkdir -p content/posts/{POST-NAME}
+- Create a new Markdown file `index.md` [1] in the new post directory.
 - Provide the necessary frontmatter in the new Markdown file.
 - Provide the content of the new post.
 - Validate [2] a draft of the new post.
@@ -25,7 +27,7 @@ To create a new post, you must:
 
 [1] The new Markdown file should have content that looks like the template below. Anything in braces
 is a placeholder and must be replaced. You may have more than 1 author and any number of tags (even
-zero). The `[extra]` section and its contents are optional (authors and dates are shown by default).
+zero). The `[extra]` section and its contents are optional (default values are shown below).
 
 ```
 +++

@@ -175,6 +175,9 @@ function initSearch() {
         }
     }, 150));
 
+    /*
+     * Focus the search box when the '/' key is pressed.
+     */
     document.onkeyup = function(e) {
         var key = e.which || e.keyCode;
         if (key === 191) {
