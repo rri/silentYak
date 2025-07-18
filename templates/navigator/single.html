@@ -1,14 +1,14 @@
 <nav class="nav">
     <div class="newer">
         {% if page.lower %}
-        <a href="{{ page.lower.permalink | trim_end_matches(pat="/") | safe }}" title="{{ page.lower.title }}">↑ newer</a>
+        <a href="{{ page.lower.permalink | safe }}" title="{{ page.lower.title }}">↑ newer</a>
         {% else %}
         ↑ newer
         {% endif %}
     </div>
     <div class="older">
         {% if page.higher %}
-        <a href="{{ page.higher.permalink | trim_end_matches(pat="/") | safe }}" title="{{ page.higher.title }}">↓ older</a>
+        <a href="{{ page.higher.permalink | safe }}" title="{{ page.higher.title }}">↓ older</a>
         {% else %}
         ↓ older
         {% endif %}

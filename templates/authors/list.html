@@ -9,7 +9,7 @@
         <ul type="square" class="authors" role="navigation" aria-label="Authors">
             {% for term in terms %}
             <li>
-                <a href="{{ term.permalink | trim_end_matches(pat="/") }}" title="View details">
+                <a href="{{ term.permalink | safe }}" title="View details">
                     <span class="author">{{ term.name }}</span>
                 </a>
             </li>
