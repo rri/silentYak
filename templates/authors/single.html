@@ -4,7 +4,6 @@
 <div class="term-heading">
     <span class="author">{{ term.name }}</span>
 </div>
-{% set hide_comments = true %}
 {% for page in paginator.pages %}
 {% include "posts/content.html" %}
 {% endfor %}

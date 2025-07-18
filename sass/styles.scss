@@ -527,7 +527,7 @@ img + em, video + em {
             border-top-color: var(--line-color);
             display: flex;
             flex-direction: column;
-            row-gap: var(--spacing-lg);
+            row-gap: var(--spacing-md);
             padding: 0 var(--spacing-md);
             animation: fadeIn var(--animation-duration) ease-out;
 
