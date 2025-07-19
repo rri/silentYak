@@ -113,9 +113,6 @@ function makeTeaser(body, terms) {
     const firstWordWeight = 8;
     const teaserMaxWords = 30;
     const classSearchTerm = "search-term";
-    const classSearchResultsItem = "search-results-item";
-    const classSearchResultsItemTitle = "search-results-item-title";
-    const classSearchResultsItemSnippet = "search-results-item-snippet";
 
     var stemmedTerms = terms.map(function (w) {
         return elasticlunr.stemmer(w.toLowerCase());
@@ -210,7 +207,11 @@ function makeTeaser(body, terms) {
 }
 
 function formatSearchResultItem(item, terms) {
-    var heading = item.doc.title === "" ? "..." : item.doc.title;
+    const classSearchResultsItem = "search-results-item";
+    const classSearchResultsItemTitle = "search-results-item-title";
+    const classSearchResultsItemSnippet = "search-results-item-snippet";
+    const heading = item.doc.title === "" ? "..." : item.doc.title;
+
     return `<div class="${classSearchResultsItem}">`
          + `<div class="${classSearchResultsItemTitle}"><a href="${item.ref}">${heading}</a></div>`
          + `<div class="${classSearchResultsItemSnippet}">${makeTeaser(item.doc.body, terms)}</div>`
