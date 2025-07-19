@@ -64,3 +64,5 @@ the one that saves him from the {{ spoiler (text = "evil Superman clone") }} in 
 really, the movie might make more sense if you were to think of the *dog* as the protagonist. Maybe
 I just got the titular characters mixed up. For isn't a dog man's best friend, in many ways as
 *human* as the alien child of Jor-El, and thus, a kind of (Super)man?
+
+![Superman (2025) Poster](superman-2025-poster.jpg "Superman (2025) Poster")
