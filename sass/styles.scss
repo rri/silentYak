@@ -134,6 +134,7 @@
         --background-button: linear-gradient(0deg, #707070 0%, #303030 40%, #404040 100%);
         --background-button-hover: linear-gradient(0deg, #707070 0%, #303030 70%, #404040 100%);
         --button-fore-color: #e0e0e0;
+        --blackout-color: #000000;
     }
 }
 
@@ -158,6 +159,7 @@
         --background-button: linear-gradient(0deg, #202020 0%, #303030 40%, #101010 100%);
         --background-button-hover: linear-gradient(0deg, #202020 0%, #303030 70%, #101010 100%);
         --button-fore-color: #e0e0e0;
+        --blackout-color: #000000;
     }
 }
 
@@ -838,6 +840,19 @@ img + em, video + em {
             padding: var(--spacing-lg);
             margin: var(--spacing-lg) 0;
             border-radius: var(--border-radius);
+        }
+
+        .spoiler {
+            color: var(--blackout-color);
+            background-color: var(--blackout-color);
+            transition: var(--transition);
+            cursor: grab;
+
+            &:active {
+                color: var(--fore-color);
+                background-color: var(--back-color);
+                cursor: grabbing;
+            }
         }
 
         .nav {
