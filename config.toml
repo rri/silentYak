@@ -16,11 +16,12 @@ taxonomies = [
 highlight_code = true
 highlight_theme = "css"
 highlight_themes_css = [
-    { filename = "syntax-theme-b.css", theme = "solarized-dark" },
-    { filename = "syntax-theme-w.css", theme = "solarized-light" },
+    { filename = "syntax-theme-b.css", theme = "gruvbox-dark" },
+    { filename = "syntax-theme-w.css", theme = "gruvbox-light" },
 ]
 smart_punctuation = true
 external_links_no_follow = true
+lazy_async_image = true
 
 [extra]
 copyright_info = "Ramnath R Iyer"
