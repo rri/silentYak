@@ -42,6 +42,21 @@
     <link rel="stylesheet" href="{{ get_url(path='/styles.css', cachebust=true) }}">
     <link rel="stylesheet" href="/syntax-theme-b.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="/syntax-theme-w.css" media="(prefers-color-scheme: light)">
+    {% if paginator %}
+    {% if paginator.previous %}
+    <link rel="prev" href="{{ paginator.previous | safe }}" />
+    {% endif %}
+    {% if paginator.next %}
+    <link rel="next" href="{{ paginator.next | safe }}" />
+    {% endif %}
+    {% else %}
+    {% if page.lower %}
+    <link rel="prev" href="{{ page.lower.permalink | safe }}" />
+    {% endif %}
+    {% if page.higher %}
+    <link rel="next" href="{{ page.higher.permalink | safe }}" />
+    {% endif %}
+    {% endif %}
 </head>
 
 <body>
