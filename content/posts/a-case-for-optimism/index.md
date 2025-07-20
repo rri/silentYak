@@ -36,4 +36,4 @@ To avoid taking action requires a great deal of patience, and to be patient, one
 optimism that all the right things *will* magically happen, that the universe *will* conspire to
 help you, and that everything *will* fall into place.
 
-**Be unreasonably optimistic.**
+Be unreasonably optimistic.
