@@ -1,6 +1,6 @@
 +++
 title = "A Case for Optimism"
-date = 2025-07-10
+date = 2025-07-10T18:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]

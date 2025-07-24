@@ -1,6 +1,6 @@
 +++
 title = "Hobbes"
-date = 2025-07-13
+date = 2025-07-13T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["cat", "kitten", "hobbes"]

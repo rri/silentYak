@@ -1,6 +1,6 @@
 +++
 title = "Lake 22 Trail"
-date = 2025-06-28
+date = 2025-06-28T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["hike", "trail"]

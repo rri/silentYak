@@ -1,6 +1,6 @@
 +++
 title = "Crash and Burn"
-date = 2025-07-23
+date = 2025-07-23T01:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["ubuntu", "linux", "wordpress", "website"]

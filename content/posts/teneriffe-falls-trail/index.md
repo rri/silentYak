@@ -1,6 +1,6 @@
 +++
 title = "Teneriffe Falls Trail"
-date = 2025-06-22
+date = 2025-06-22T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["hike", "trail"]

@@ -1,6 +1,6 @@
 +++
 title = "Take a Sip"
-date = 2025-07-14
+date = 2025-07-14T07:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
