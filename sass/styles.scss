@@ -86,6 +86,7 @@
     --font-content: "Roboto Slab", serif;
     --font-italics: "Crimson Text", serif;
     --font-mono: "Fira Mono", monospace;
+    --font-size-adjust: ex-height 0.53;
     --base-font-size: 16px;
     --line-width: 1px;
     --outline-width: 2px;
@@ -206,6 +207,7 @@ body {
     background-image: var(--background);
     background-repeat: repeat;
     font-size: var(--base-font-size);
+    font-size-adjust: var(--font-size-adjust);
     line-height: 1.8em;
     min-width: var(--min-page-width);
     transition: var(--transition);
