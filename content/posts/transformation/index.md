@@ -6,8 +6,8 @@ authors = ["Ramnath R Iyer"]
 tags = ["cat", "kitten", "hobbes"]
 +++
 
-![Tiger](tiger.webp "Tiger")
+![Tiger](hobbes-tiger.webp "Tiger")
 *Tiger*
 
-![Cat](cat.webp "Cat")
+![Cat](hobbes-cat.webp "Cat")
 *Cat*
