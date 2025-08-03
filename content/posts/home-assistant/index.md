@@ -38,7 +38,6 @@ knocking](@/posts/port-knocking/index.md).)
 
 My final network looks like the diagram below.
 
-{{ borderless() }}
 ![Home Networking](home-networking.svg "Home Networking")
 
 I hooked up one camera ([REOLINK Duo 3 16MP UHD Dual-Lens
