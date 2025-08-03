@@ -68,21 +68,21 @@ The `switch-theme` script that the command above invokes is quite simple:
 # they will not stay in sync if they didn't start out in
 # sync!
 
-set -x
+set -euxo pipefail
 
 CFG_PATH="$HOME/.xsettingsd"
 
 update() {
     local key="$1"
-    local def_theme="$2"
-    local alt_theme="$3"
-    local old_theme=$(pcregrep -o1 "$key "'"(.*)"' "$CFG_PATH")
+    local def="$2"
+    local alt="$3"
+    local old=$(pcregrep -o1 "$key "'"(.*)"' "$CFG_PATH")
     if [ "$?" -eq 0 ]
     then
-        local new_theme=$([ "$old_theme" == "$def_theme" ] && echo -ne "$alt_theme" || echo -ne "$def_theme")
-        sed -i 's#'$key' .*#'$key' "'$new_theme'"#' "$CFG_PATH"
+        local new=$([ "$old" == "$def" ] && echo -ne "$alt" || echo -ne "$def")
+        sed -i 's#'$key' .*#'$key' "'$new'"#' "$CFG_PATH"
     else
-        echo $key' "'$def_theme'"' >> "$CFG_PATH"
+        echo $key' "'$def'"' >> "$CFG_PATH"
     fi
 }
 
