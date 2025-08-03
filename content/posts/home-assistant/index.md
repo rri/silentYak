@@ -3,7 +3,7 @@ title = "Home Assistant"
 date = 2025-08-02T18:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
-tags = ["home", "linux", "networking", "automation"]
+tags = ["home", "linux", "automation"]
 +++
 
 For a while now, I'd been meaning to make my home "smarter", i.e., more sensor-driven. Although I
