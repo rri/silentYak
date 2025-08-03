@@ -115,7 +115,7 @@ thing, the sequence in which configuration is specified matters, and the TLS con
 (`keyfile`, `certfile`, `cafile`) will most definitely break if it isn't specified *before* the
 `listener` configuration.
 
-```plaintext
+```
 allow_anonymous false
 keyfile /data/tls/combinatrix.cloud.privkey.pem
 certfile /data/tls/combinatrix.cloud.cert.pem
