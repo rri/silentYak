@@ -48,34 +48,46 @@ The `switch-theme` script that the command above invokes is quite simple:
 # The mode is toggled by using the `xsettingsd` daemon,
 # which should already be running. The `.xsettingsd`
 # configuration file is updated, with exactly one of the
-# following values:
+# following sets of values:
 #
-# Net/ThemeName "Adwaita"     # Light
-# Net/ThemeName "AdwaitaDark" # Dark
+# Net/ThemeName "Adwaita"       # Light
+# Net/IconThemeName "Tela"      # Light
 #
-# Note that the Adwaita and Adwaita-dark themes must already
-# be installed on the system.
+# OR
 #
-# The script sends a HUP signal to the process, causing the
+# Net/ThemeName "Adwaita-dark"  # Dark
+# Net/IconThemeName "Tela-dark" # Dark
+#
+# Note that these themes must already be installed. The
+# script sends a HUP signal to the process, causing the
 # setting to take effect at once.
+#
+# Also note that there's a fun bug in this script that
+# I didn't bother to fix, which is: it toggles the keys
+# for Net/ThemeName and Net/IconThemeName separately, so
+# they will not stay in sync if they didn't start out in
+# sync!
 
-set -euxo pipefail
+set -x
 
 CFG_PATH="$HOME/.xsettingsd"
-DEF_THEME="Adwaita"
-ALT_THEME="Adwaita-dark"
-OLD_THEME=$(pcregrep -o1 'Net/ThemeName "(.*)"' "$CFG_PATH")
-KEY="Net/ThemeName"
 
-if [ "$?" -eq 0 ]
-then
-    NEW_THEME=$([ "$OLD_THEME" == "$DEF_THEME" ] &&        \
-        echo -ne $ALT_THEME ||                             \
-        echo -ne $DEF_THEME)
-    sed -i 's#'$KEY' .*#'$KEY' "'$NEW_THEME'"#' "$CFG_PATH"
-else
-    echo $KEY' "'$DEF_THEME'"' >> "$CFG_PATH"
-fi
+update() {
+    local key="$1"
+    local def_theme="$2"
+    local alt_theme="$3"
+    local old_theme=$(pcregrep -o1 "$key "'"(.*)"' "$CFG_PATH")
+    if [ "$?" -eq 0 ]
+    then
+        local new_theme=$([ "$old_theme" == "$def_theme" ] && echo -ne "$alt_theme" || echo -ne "$def_theme")
+        sed -i 's#'$key' .*#'$key' "'$new_theme'"#' "$CFG_PATH"
+    else
+        echo $key' "'$def_theme'"' >> "$CFG_PATH"
+    fi
+}
+
+update "Net/ThemeName" "Adwaita" "Adwaita-dark"
+update "Net/IconThemeName" "Tela" "Tela-dark"
 
 killall -HUP xsettingsd
 ```
