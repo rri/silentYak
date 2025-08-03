@@ -206,6 +206,7 @@ body {
     color: var(--fore-color);
     background-image: var(--background);
     background-repeat: repeat;
+    background-attachment: fixed;
     font-size: var(--base-font-size);
     font-size-adjust: var(--font-size-adjust);
     line-height: 1.8em;
