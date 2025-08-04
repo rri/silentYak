@@ -1,5 +1,5 @@
 +++
-title = "Poo Poo Point - Chirico Trail"
+title = "Chirico Trail"
 date = 2025-08-03T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
