@@ -38,20 +38,22 @@
         {% if archive %}
         {% set section = get_section(path="posts/_index.md") %}
         {% for year, pages in section.pages | group_by (attribute = "year") %}
-        <h2 class="index-year">
-            {{ year }}
-        </h2>
-        {% for page in pages %}
-        <div class="index-record">
-            <div class="index-date">
-                {{ page.date | date(format="%Y-%m-%d") }}
+        <div class="section-multi-column">
+            <h2 class="index-year">
+                {{ year }}
+            </h2>
+            {% for page in pages %}
+            <div class="index-record">
+                <div class="index-date">
+                    {{ page.date | date(format="%Y-%m-%d") }}
+                </div>
+                <div class="index-title">
+                    <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
+                </div>
             </div>
-            <div class="index-title">
-                <a href="{{ page.permalink | safe }}" title="{{ page.title }}">{{ page.title }}</a>
-            </div>
+        {% endfor %}
+        {% endfor %}
         </div>
-        {% endfor %}
-        {% endfor %}
         {% else %}
         {% if page.toc and page.extra.toc %}
         <h1>On This Page...</h1>

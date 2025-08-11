@@ -670,8 +670,13 @@ img + em, video + em {
             justify-content: flex-end;
         }
 
+        .section-multi-column {
+            column-width: 20em;
+        }
+
         .index-year {
             border-bottom: var(--line-width) solid var(--line-color);
+            column-span: all;
             padding-bottom: var(--spacing-sm);
             transition: var(--transition);
 
