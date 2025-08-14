@@ -151,7 +151,7 @@
         --link-hover-color: #ff8e8e;
         --note-back-color: #2d2a24;
         --note-fore-color: #b8b0a6;
-        --accent-color: #fdfd96;
+        --accent-color: #1a1510;
         --highlight-color: #2a2520;
         --muted-color: #a0a0a0;
         --header-filter: invert(1) hue-rotate(180deg) brightness(0.6) contrast(1.2);
@@ -322,6 +322,39 @@ h2 {
     font-style: italic;
 }
 
+table {
+    border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed;
+    border-top: var(--line-width) solid var(--fore-color);
+    border-bottom: var(--line-width) solid var(--fore-color);
+
+    thead {
+        background-color: var(--accent-color);
+        border-bottom: var(--line-width) solid var(--fore-color);
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: var(--highlight-color);
+    }
+
+    tfoot {
+        border-top: var(--line-width) solid var(--fore-color);
+    }
+
+    th, td {
+        padding: var(--spacing-md);
+        vertical-align: top;
+    }
+
+    caption {
+        display: block;
+        padding: var(--spacing-md) 0;
+        text-align: center;
+        caption-side: bottom;
+    }
+}
+
 p {
     margin: var(--spacing-lg) 0;
 
@@ -329,6 +362,7 @@ p {
         border: var(--line-width) solid var(--fore-color);
         padding: var(--spacing-sm);
     }
+
 }
 
 em {
