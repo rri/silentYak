@@ -469,7 +469,7 @@ author casually dismisses the idea that the notion of liberty would apply to sup
 
 {{ link (class = "go-back", href = "#contents", text = "↑ Back to Top") }}
 
-### [The Laws of Human Nature](ihttps://www.amazon.com/dp/B0848S1CJW)
+### [The Laws of Human Nature](https://www.amazon.com/dp/B0848S1CJW)
 
 #### by Robert Greene
 
