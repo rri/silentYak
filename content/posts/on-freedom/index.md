@@ -1,6 +1,6 @@
 +++
 title = "On Freedom"
-date = 2026-01-11T02:30:00-08:00
+date = 2026-01-13T02:30:00-08:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
