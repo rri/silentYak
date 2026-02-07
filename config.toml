@@ -15,17 +15,17 @@ taxonomies = [
 
 
 [markdown]
-highlight_code = true
-highlight_theme = "css"
-highlight_themes_css = [
-    { filename = "syntax-theme-b.css", theme = "gruvbox-dark" },
-    { filename = "syntax-theme-w.css", theme = "gruvbox-light" },
-]
 smart_punctuation = true
 external_links_class = "external-link"
 external_links_no_follow = true
 external_links_no_referrer = true
 definition_list = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "gruvbox-light-medium"
+dark_theme = "gruvbox-dark-medium"
+error_on_missing_language = true
 
 [search]
 include_description = true
