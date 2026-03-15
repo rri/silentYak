@@ -220,8 +220,8 @@ and our legal justice system. **Takeaway:** *Everything* is related. Human behav
 a vast, complex, entangled system where cause-and-effect is seldom clearcut, but rather, everything
 is *subtly* influenced by a multitude of factors. P.S. I recommend [the audiobook version on
 Audible](https://www.audible.com/pd/Behave-Audiobook/B06XW3MVNF), narrated by Michael Goldstrom.  
-[↑
-Back to Top](#contents)
+
+{{ link (class = "go-back", href = "#contents", text = "↑ Back to Top") }}
 
 ### [Thinking in Bets](https://www.amazon.com/dp/B074DG9LQF)
 
@@ -278,8 +278,8 @@ product, you need to explain with conviction why it is a problem worth solving, 
 are going to do it. What you actually build ends up being the least important bit of the equation.
 **Takeaway:** You will seldom regret spending an extraordinary portion of your time explaining *why*
 it is important to solve a problem (and repeating yourself); don’t hop over this crucial step.  
-[↑
-Back to Top](#contents)
+
+{{ link (class = "go-back", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Selfish Gene](https://www.amazon.com/dp/B0722G5V92)
 
@@ -423,8 +423,8 @@ are what have helped us survive in the face of a multitude of dangers in our nat
 through our evolutionary history. What we must be prepared to do, however, is to gain a deeper
 understanding our our own proclivity towards certain kinds of biases and devise mechanisms to
 counteract them where it makes sense to do so. **Takeaway:** Don’t blindly trust your own judgment.  
-[↑
-Back to Top](#contents)
+
+{{ link (class = "go-back", href = "#contents", text = "↑ Back to Top") }}
 
 ### [The Ethical Algorithm](https://www.amazon.com/dp/B07XLTXBXV)
 
