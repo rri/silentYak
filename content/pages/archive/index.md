@@ -1,7 +1,7 @@
 +++
 title = "Archive"
 date = "2025-06-24"
-template = "posts/archive.html"
+template = "posts/index/by_date.html"
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["meta"]
