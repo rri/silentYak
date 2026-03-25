@@ -4,6 +4,8 @@ date = 2025-08-11T19:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
+[extra]
+allow_comments = true
 +++
 
 So much of our lives are affected by false choices. By 'false choice', I mean a decision where two

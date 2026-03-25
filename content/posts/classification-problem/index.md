@@ -4,6 +4,8 @@ date = 2025-08-13T19:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
+[extra]
+allow_comments = true
 +++
 
 In a previous post, I talked about [false choices](@/posts/false-choices/index.md), situations where

@@ -4,6 +4,8 @@ date = 2025-07-19T22:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["meta", "lifehack"]
+[extra]
+allow_comments = true
 +++
 
 Getting things done is a great way to keep moving forward in life with a sense of satisfaction. But

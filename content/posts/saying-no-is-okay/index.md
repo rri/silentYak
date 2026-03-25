@@ -4,6 +4,8 @@ date = 2025-09-06T21:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
+[extra]
+allow_comments = true
 +++
 
 > "NO is a complete sentence." ---Anonymous

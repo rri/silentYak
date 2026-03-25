@@ -4,6 +4,8 @@ date = 2025-07-10T18:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
+[extra]
+allow_comments = true
 +++
 
 As we get older and gain more experience, the one thing we get better at, I think, is learning not

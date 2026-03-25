@@ -4,6 +4,8 @@ date = 2025-08-23T19:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["cat", "kitten", "susie"]
+[extra]
+allow_comments = true
 +++
 
 I am thrilled and excited to welcome **Susie** into our home!

@@ -4,6 +4,8 @@ date = 2026-02-22T09:25:00-08:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["git", "script"]
+[extra]
+allow_comments = true
 +++
 
 I wrote a little shell script to scratch an itch: [git-squash-paths](https://github.com/rri/git-squash-paths).

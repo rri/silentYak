@@ -4,6 +4,8 @@ date = 2025-06-28T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["hike", "trail"]
+[extra]
+allow_comments = true
 +++
 
 Lake 22 is another short and easy hike, an hour and twenty minutes away from Bellevue. It is a

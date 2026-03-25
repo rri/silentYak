@@ -4,6 +4,8 @@ date = 2025-07-01T20:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["gentoo", "linux", "i3"]
+[extra]
+allow_comments = true
 +++
 
 I use the [i3 tiling window manager](https://i3wm.org/) on [Gentoo Linux](https://www.gentoo.org/),

@@ -4,6 +4,8 @@ date = 2025-08-10T20:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["pizza", "restaurant"]
+[extra]
+allow_comments = true
 +++
 
 Yesterday, Anu and I were out with friends in the vicinity of Seattle downtown, and we discovered

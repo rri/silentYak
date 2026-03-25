@@ -4,6 +4,8 @@ date = 2025-06-22T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["hike", "trail"]
+[extra]
+allow_comments = true
 +++
 
 Today's hike was a relatively easy one, 5.6 miles roundtrip with 1,585 feet elevation gain, with the

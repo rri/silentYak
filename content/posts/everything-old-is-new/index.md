@@ -4,6 +4,8 @@ date = 2025-06-21T07:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["reflection"]
+[extra]
+allow_comments = true
 +++
 
 > "The Wheel of Time turns, and Ages come and pass, leaving memories that become legend. Legend
