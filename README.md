@@ -48,6 +48,3 @@ hide_date = true
 
 - Run `brew install zola`.
 - In the repository root, run `zola serve`.
-
-In case you want to set up a *new* static website just like silentYak, you may do so by following
-the [(very brief) instructions here](https://optimix.dev/2023/12/23/static-website/).
