@@ -38,6 +38,7 @@ background = "background.webp"
 background_header = "checkers.svg"
 allow_invert_icon = false
 allow_invert_logo = false
+comment_api = "https://comments.silentyak.workers.dev"
 pinned_links = [
     { title = "Reading List", href = "/pages/reading-list/" },
     { title = "Archive", href = "/pages/archive/" },
