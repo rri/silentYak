@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<article class="post">
-    <div class="section-title">
+<div class="post">
+    <div class="item-title">
         {{ taxonomy.name | capitalize }}
     </div>
-    <div class="section-content">
+    <div class="item-content">
         <ul type="square" class="tag-cloud" role="navigation" aria-label="Tag Cloud">
             {% for term in terms %}
             <li>
@@ -16,5 +16,5 @@
             {% endfor %}
         </ul>
     </div>
-</article>
+</div>
 {% endblock %}
