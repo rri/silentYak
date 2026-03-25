@@ -4,6 +4,8 @@ date = 2025-07-14T07:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
+[extra]
+allow_comments = true
 +++
 
 One of my principles in life is that when someone hands you your cup of coffee, you take a sip

@@ -4,6 +4,8 @@ date = 2025-07-05T19:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["hike", "trail"]
+[extra]
+allow_comments = true
 +++
 
 Today, we drove a little further out, to Longmire near Mount Rainier, to hike the Rampart Ridge Loop

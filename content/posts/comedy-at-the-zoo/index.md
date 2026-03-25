@@ -4,6 +4,8 @@ date = 2025-08-23T18:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["comedy", "standup"]
+[extra]
+allow_comments = true
 +++
 
 [Woodland Park Zoo](https://www.zoo.org/) was a good place to be yesterday, with Seth Meyers

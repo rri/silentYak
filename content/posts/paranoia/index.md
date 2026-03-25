@@ -4,6 +4,8 @@ date = 2025-07-03T09:15:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["poem"]
+[extra]
+allow_comments = true
 +++
 
 {{ indent() }}

@@ -4,6 +4,8 @@ date = 2025-07-18T18:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["movie", "review"]
+[extra]
+allow_comments = true
 +++
 
 [Superman](https://www.imdb.com/title/tt5950044/), released in theaters on the 11<sup>th</sup> of

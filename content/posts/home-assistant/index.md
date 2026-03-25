@@ -4,6 +4,8 @@ date = 2025-08-02T18:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["home", "linux", "automation"]
+[extra]
+allow_comments = true
 +++
 
 For a while now, I'd been meaning to make my home "smarter", i.e., more sensor-driven. Although I

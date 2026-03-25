@@ -4,6 +4,8 @@ date = 2025-07-23T01:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["ubuntu", "linux", "wordpress", "website"]
+[extra]
+allow_comments = true
 +++
 
 So --- funny story.

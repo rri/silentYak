@@ -4,6 +4,8 @@ date = 2025-07-08T09:15:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["plant", "garden", "home", "sunflower"]
+[extra]
+allow_comments = true
 +++
 
 It's as simple as it sounds: we have sunflower plants by our window. I hope that in time each one of

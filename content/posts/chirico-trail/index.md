@@ -4,6 +4,8 @@ date = 2025-08-03T17:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["hike", "trail"]
+[extra]
+allow_comments = true
 +++
 
 Today's hike was to Poo Poo Point. Anu and I thought this was going to be a 7.2 mile hike with an

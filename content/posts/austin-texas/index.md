@@ -4,6 +4,8 @@ date = 2026-01-01T11:00:00-08:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["vacation"]
+[extra]
+allow_comments = true
 +++
 
 Each December, we look for a warm place to spend our time, ideally one that's a stark contrast from

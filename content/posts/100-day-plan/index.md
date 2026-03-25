@@ -4,6 +4,8 @@ date = 2025-07-04T08:30:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["lifehack"]
+[extra]
+allow_comments = true
 +++
 
 I've been mulling over an idea for Getting Stuff Done™ that I think could be highly effective, but I

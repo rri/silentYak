@@ -4,6 +4,8 @@ date = 2025-07-06T10:00:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["typesetting"]
+[extra]
+allow_comments = true
 +++
 
 The vast majority of work product is mediocre at best. It takes an incredible amount of time and

@@ -4,6 +4,8 @@ date = 2025-07-04T21:21:00-07:00
 [taxonomies]
 authors = ["Ramnath R Iyer"]
 tags = ["typesetting", "wordpress"]
+[extra]
+allow_comments = true
 +++
 
 I'd [mentioned earlier](@/posts/everything-old-is-new/index.md) that I had abandoned (rather, left
