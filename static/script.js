@@ -221,7 +221,7 @@ function formatSearchResultItem(item, terms) {
 }
 
 function initComments() {
-    const commentAPI = "https://comments.optimix.workers.dev";
+    const commentAPI = "https://comments.silentyak.workers.dev";
     const commentFormId = "item-comment-form";
     const commentFormWebsiteQuery = '[name="website"]';
     const commentFormMessageQuery = "#item-comment-form-message";
