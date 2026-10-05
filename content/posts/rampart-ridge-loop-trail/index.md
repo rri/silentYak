@@ -37,7 +37,7 @@ horridus*), and 'Cascade Oregon-grape' (*berberis nervosa*) along the way.
 On the way back, we stopped at Narada Falls. This waterfall flows into the Paradise river, which
 runs parallel to the Nisqually river and eventually joins it.
 
-{{ video (src = "/posts/rampart-ridge-loop-trail/narada-falls.mov", type = "video/mov") }}
+{{ video (src = "/posts/rampart-ridge-loop-trail/narada-falls.mp4", type = "video/mp4") }}
 <em>The glorious Narada Falls, on the way to Paradise.</em>
 
 We got some coffee and soda at the Elbe Market Country Store. There are several statues of Bigfoot

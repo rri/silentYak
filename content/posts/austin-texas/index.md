@@ -22,5 +22,5 @@ out during one of our walks. This was a large 3084-square-foot house with a uniq
 But perhaps our most novel experience during this trip was taking Uber rides in Waymo vehicles (the
 autonomous and driverless ones). 
 
-{{ video (src = "/posts/austin-texas/waymo.mov", type = "video/mov") }}
+{{ video (src = "/posts/austin-texas/waymo.mp4", type = "video/mp4") }}
 <em>Waymo's autonomous and driverless car.</em>
